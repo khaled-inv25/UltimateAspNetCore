@@ -1,0 +1,145 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "NLog/6.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/NLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/NLog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CompanyEmployees.Application.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/CompanyEmployees.Application.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CompanyEmployees.Application.Contract.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NLog/6.1.2": {
+      "sha512": "y/3o6RVhHHeAMDaUdETeEtisYyypZApxeKd3k8HIH4IdqFzJNF5sXuJ07hNtAq6hLMup+yh3zuTckpFJqucOrw==",
+      "type": "package",
+      "path": "nlog/6.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "N.png",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/net46/NLog.dll",
+        "lib/net46/NLog.xml",
+        "lib/netstandard2.0/NLog.dll",
+        "lib/netstandard2.0/NLog.xml",
+        "lib/netstandard2.1/NLog.dll",
+        "lib/netstandard2.1/NLog.xml",
+        "nlog.6.1.2.nupkg.sha512",
+        "nlog.nuspec"
+      ]
+    },
+    "CompanyEmployees.Application.Contract/1.0.0": {
+      "type": "project",
+      "path": "../CompanyEmployees.Application.Contract/CompanyEmployees.Application.Contract.csproj",
+      "msbuildProject": "../CompanyEmployees.Application.Contract/CompanyEmployees.Application.Contract.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "CompanyEmployees.Application.Contract >= 1.0.0",
+      "NLog >= 6.1.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\DELL\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.LoggerService\\CompanyEmployees.LoggerService.csproj",
+      "projectName": "CompanyEmployees.LoggerService",
+      "projectPath": "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.LoggerService\\CompanyEmployees.LoggerService.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.LoggerService\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "D:\\Developer\\AspNet\\nuget": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.Application.Contract\\CompanyEmployees.Application.Contract.csproj": {
+              "projectPath": "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.Application.Contract\\CompanyEmployees.Application.Contract.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "dependencies": {
+          "NLog": {
+            "target": "Package",
+            "version": "[6.1.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.313/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

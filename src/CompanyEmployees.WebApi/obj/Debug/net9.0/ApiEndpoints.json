@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "CompanyEmployees.WebApi.Controllers.CompanyController",
+    "Method": "GetLoggerInfo",
+    "RelativePath": "api/Company",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

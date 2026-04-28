@@ -1,0 +1,85 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "CompanyEmployees.Application/1.0.0": {
+        "dependencies": {
+          "CompanyEmployees.Application.Contract": "1.0.0",
+          "CompanyEmployees.Domain": "1.0.0",
+          "NLog": "6.1.2"
+        },
+        "runtime": {
+          "CompanyEmployees.Application.dll": {}
+        }
+      },
+      "NLog/6.1.2": {
+        "runtime": {
+          "lib/netstandard2.1/NLog.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.1.2.5163"
+          }
+        }
+      },
+      "CompanyEmployees.Application.Contract/1.0.0": {
+        "runtime": {
+          "CompanyEmployees.Application.Contract.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "CompanyEmployees.Domain/1.0.0": {
+        "dependencies": {
+          "CompanyEmployees.Domain.Shared": "1.0.0"
+        },
+        "runtime": {
+          "CompanyEmployees.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "CompanyEmployees.Domain.Shared/1.0.0": {
+        "runtime": {
+          "CompanyEmployees.Domain.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CompanyEmployees.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NLog/6.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-y/3o6RVhHHeAMDaUdETeEtisYyypZApxeKd3k8HIH4IdqFzJNF5sXuJ07hNtAq6hLMup+yh3zuTckpFJqucOrw==",
+      "path": "nlog/6.1.2",
+      "hashPath": "nlog.6.1.2.nupkg.sha512"
+    },
+    "CompanyEmployees.Application.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CompanyEmployees.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CompanyEmployees.Domain.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

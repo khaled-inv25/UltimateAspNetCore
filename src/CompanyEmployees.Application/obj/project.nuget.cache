@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "q7JirUR6ygc=",
+  "success": true,
+  "projectFilePath": "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.Application\\CompanyEmployees.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\nlog\\6.1.2\\nlog.6.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
