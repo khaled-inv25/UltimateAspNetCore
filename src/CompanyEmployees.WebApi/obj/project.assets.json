@@ -1612,6 +1612,22 @@
           }
         }
       },
+      "CompanyEmployee.RESTful/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CompanyEmployees.Application.Contract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CompanyEmployee.RESTful.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CompanyEmployee.RESTful.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "CompanyEmployees.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -4799,6 +4815,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "CompanyEmployee.RESTful/1.0.0": {
+      "type": "project",
+      "path": "../CompanyEmployee.RESTful/CompanyEmployee.RESTful.csproj",
+      "msbuildProject": "../CompanyEmployee.RESTful/CompanyEmployee.RESTful.csproj"
+    },
     "CompanyEmployees.Application/1.0.0": {
       "type": "project",
       "path": "../CompanyEmployees.Application/CompanyEmployees.Application.csproj",
@@ -4827,6 +4848,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "CompanyEmployee.RESTful >= 1.0.0",
       "CompanyEmployees.Application >= 1.0.0",
       "CompanyEmployees.EntityFramework >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.15",
@@ -4866,6 +4888,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployee.RESTful\\CompanyEmployee.RESTful.csproj": {
+              "projectPath": "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployee.RESTful\\CompanyEmployee.RESTful.csproj"
+            },
             "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.Application\\CompanyEmployees.Application.csproj": {
               "projectPath": "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.Application\\CompanyEmployees.Application.csproj"
             },

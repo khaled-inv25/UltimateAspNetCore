@@ -32,3 +32,4 @@ D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.EntityFramework\o
 D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.EntityFramework\obj\Debug\net9.0\refint\CompanyEmployees.EntityFramework.dll
 D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.EntityFramework\obj\Debug\net9.0\CompanyEmployees.EntityFramework.pdb
 D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.EntityFramework\obj\Debug\net9.0\ref\CompanyEmployees.EntityFramework.dll
+D:\Developer\AspNet\Projects\Core\CompanyEmployees\src\CompanyEmployees.EntityFramework\obj\Debug\net9.0\CompanyEmployees.EntityFramework.sourcelink.json

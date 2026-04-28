@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "CompanyEmployees.WebApi.Controllers.CompanyController",
-    "Method": "GetLoggerInfo",
-    "RelativePath": "api/Company",
+    "ContainingType": "CompanyEmployee.RESTful.Controllers.CompaniesController",
+    "Method": "GetAllCompanies",
+    "RelativePath": "api/companies",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

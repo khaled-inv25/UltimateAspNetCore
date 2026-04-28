@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "CompanyEmployee.RESTful/1.0.0": {
+        "dependencies": {
+          "CompanyEmployees.Application.Contract": "1.0.0"
+        },
+        "runtime": {
+          "CompanyEmployee.RESTful.dll": {}
+        }
+      },
+      "CompanyEmployees.Application.Contract/1.0.0": {
+        "runtime": {
+          "CompanyEmployees.Application.Contract.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CompanyEmployee.RESTful/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CompanyEmployees.Application.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

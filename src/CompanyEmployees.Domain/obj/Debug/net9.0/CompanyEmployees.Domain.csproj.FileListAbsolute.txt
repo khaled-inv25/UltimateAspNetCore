@@ -28,3 +28,4 @@ D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.Domain\obj\Debug\
 D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.Domain\obj\Debug\net9.0\refint\CompanyEmployees.Domain.dll
 D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.Domain\obj\Debug\net9.0\CompanyEmployees.Domain.pdb
 D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.Domain\obj\Debug\net9.0\ref\CompanyEmployees.Domain.dll
+D:\Developer\AspNet\Projects\Core\CompanyEmployees\src\CompanyEmployees.Domain\obj\Debug\net9.0\CompanyEmployees.Domain.sourcelink.json

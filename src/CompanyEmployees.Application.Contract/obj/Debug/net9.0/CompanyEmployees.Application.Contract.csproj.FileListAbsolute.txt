@@ -20,3 +20,4 @@ D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.Application.Contr
 D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.Application.Contract\obj\Debug\net9.0\refint\CompanyEmployees.Application.Contract.dll
 D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.Application.Contract\obj\Debug\net9.0\CompanyEmployees.Application.Contract.pdb
 D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.Application.Contract\obj\Debug\net9.0\ref\CompanyEmployees.Application.Contract.dll
+D:\Developer\AspNet\Projects\Core\CompanyEmployees\src\CompanyEmployees.Application.Contract\obj\Debug\net9.0\CompanyEmployees.Application.Contract.sourcelink.json
