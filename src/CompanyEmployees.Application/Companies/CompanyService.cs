@@ -21,18 +21,14 @@ namespace CompanyEmployees.Application.Companies
         {
             var companies =  await _repositoryManager.Company.GetAllCompaniesAsync(trackChanges);
 
-            List<CompanyDto> dtos = new();
-
-            foreach (var company in companies)
-            {
-                dtos.Add(new CompanyDto
+            var dtos = companies.Select(c => 
+                new CompanyDto 
                 {
-                    Id = company.Id,
-                    Name = company.Name,
-                    Address = company.Address,
-                    Country = company.Country,
-                });
-            }
+                    Id = c.Id,
+                    Name = c.Name, 
+                    Address = c.Address, 
+                    Country = c.Country
+                }).ToList();
 
             return dtos;
         }

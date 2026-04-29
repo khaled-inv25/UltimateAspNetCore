@@ -1,5 +1,4 @@
 ﻿using CompanyEmployees.Application.Contract;
-using CompanyEmployees.Application.Contract.Companies;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CompanyEmployee.RESTful.Controllers

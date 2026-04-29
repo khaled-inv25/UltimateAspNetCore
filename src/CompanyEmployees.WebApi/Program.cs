@@ -10,6 +10,7 @@ builder.Services.ConfigureLogger();
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServicesManager();
 builder.Services.ConfigureSqlContext(builder.Configuration);
+builder.Services.AddAutoMapper(typeof(Program));
 
 builder.Services.AddControllers()
     .AddApplicationPart(typeof(CompanyEmployee.RESTful.AssemblyReference).Assembly);
