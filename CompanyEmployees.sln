@@ -17,6 +17,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyEmployees.EntityFram
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyEmployee.RESTful", "src\CompanyEmployee.RESTful\CompanyEmployee.RESTful.csproj", "{02566535-C921-4B97-AA06-52384C7BD886}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{EABCC8EA-E273-42E4-877A-0DBF30EE205E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastructure", "{6ABC527E-83C0-4832-9E7B-00567B030E89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +60,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{46B81BAE-4A2C-4A42-A04B-98F3BA5A8345} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{55505320-EFBB-4DAD-A5F3-B0A50912C0A8} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{EEBB073C-7375-4602-B2E7-AAA65C095DB7} = {EABCC8EA-E273-42E4-877A-0DBF30EE205E}
+		{0F2DC84F-0C1C-4762-BC66-3D29CF0F8A9A} = {EABCC8EA-E273-42E4-877A-0DBF30EE205E}
+		{2E6C8AFF-0EC0-4BF1-B3A8-5A8E0CEE3806} = {6ABC527E-83C0-4832-9E7B-00567B030E89}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D1D7066C-3564-488C-87CD-C8088199FC2D}

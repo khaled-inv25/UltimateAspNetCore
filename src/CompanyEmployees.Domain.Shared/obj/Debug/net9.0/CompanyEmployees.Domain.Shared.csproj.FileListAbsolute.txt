@@ -22,3 +22,15 @@ D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.Domain.Shared\obj
 D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.Domain.Shared\obj\Debug\net9.0\ref\CompanyEmployees.Domain.Shared.dll
 D:\Developer\AspNet\Projects\Core\CompanyEmployees\src\CompanyEmployees.Domain.Shared\obj\Debug\net9.0\CompanyEmployees.Domain.Shared.sourcelink.json
 D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.Domain.Shared\obj\Debug\net9.0\CompanyEmployees.Domain.Shared.sourcelink.json
+D:\Developer\AspNet\Projects\Core\UltimateAspNetCore\src\CompanyEmployees.Domain.Shared\bin\Debug\net9.0\CompanyEmployees.Domain.Shared.deps.json
+D:\Developer\AspNet\Projects\Core\UltimateAspNetCore\src\CompanyEmployees.Domain.Shared\bin\Debug\net9.0\CompanyEmployees.Domain.Shared.dll
+D:\Developer\AspNet\Projects\Core\UltimateAspNetCore\src\CompanyEmployees.Domain.Shared\bin\Debug\net9.0\CompanyEmployees.Domain.Shared.pdb
+D:\Developer\AspNet\Projects\Core\UltimateAspNetCore\src\CompanyEmployees.Domain.Shared\obj\Debug\net9.0\CompanyEmployees.Domain.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Developer\AspNet\Projects\Core\UltimateAspNetCore\src\CompanyEmployees.Domain.Shared\obj\Debug\net9.0\CompanyEmployees.Domain.Shared.AssemblyInfoInputs.cache
+D:\Developer\AspNet\Projects\Core\UltimateAspNetCore\src\CompanyEmployees.Domain.Shared\obj\Debug\net9.0\CompanyEmployees.Domain.Shared.AssemblyInfo.cs
+D:\Developer\AspNet\Projects\Core\UltimateAspNetCore\src\CompanyEmployees.Domain.Shared\obj\Debug\net9.0\CompanyEmployees.Domain.Shared.csproj.CoreCompileInputs.cache
+D:\Developer\AspNet\Projects\Core\UltimateAspNetCore\src\CompanyEmployees.Domain.Shared\obj\Debug\net9.0\CompanyEmployees.Domain.Shared.sourcelink.json
+D:\Developer\AspNet\Projects\Core\UltimateAspNetCore\src\CompanyEmployees.Domain.Shared\obj\Debug\net9.0\CompanyEmployees.Domain.Shared.dll
+D:\Developer\AspNet\Projects\Core\UltimateAspNetCore\src\CompanyEmployees.Domain.Shared\obj\Debug\net9.0\refint\CompanyEmployees.Domain.Shared.dll
+D:\Developer\AspNet\Projects\Core\UltimateAspNetCore\src\CompanyEmployees.Domain.Shared\obj\Debug\net9.0\CompanyEmployees.Domain.Shared.pdb
+D:\Developer\AspNet\Projects\Core\UltimateAspNetCore\src\CompanyEmployees.Domain.Shared\obj\Debug\net9.0\ref\CompanyEmployees.Domain.Shared.dll
