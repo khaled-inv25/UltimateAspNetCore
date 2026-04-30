@@ -37,3 +37,4 @@ D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.Application\obj\D
 D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.Application\obj\Debug\net9.0\CompanyEmployees.Application.pdb
 D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.Application\obj\Debug\net9.0\ref\CompanyEmployees.Application.dll
 D:\Developer\AspNet\Projects\Core\CompanyEmployees\src\CompanyEmployees.Application\obj\Debug\net9.0\CompanyEmployees.Application.sourcelink.json
+D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.Application\obj\Debug\net9.0\CompanyEmployees.Application.sourcelink.json

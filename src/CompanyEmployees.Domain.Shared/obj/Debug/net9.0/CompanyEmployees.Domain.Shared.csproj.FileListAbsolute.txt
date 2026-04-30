@@ -21,3 +21,4 @@ D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.Domain.Shared\obj
 D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.Domain.Shared\obj\Debug\net9.0\CompanyEmployees.Domain.Shared.pdb
 D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.Domain.Shared\obj\Debug\net9.0\ref\CompanyEmployees.Domain.Shared.dll
 D:\Developer\AspNet\Projects\Core\CompanyEmployees\src\CompanyEmployees.Domain.Shared\obj\Debug\net9.0\CompanyEmployees.Domain.Shared.sourcelink.json
+D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.Domain.Shared\obj\Debug\net9.0\CompanyEmployees.Domain.Shared.sourcelink.json

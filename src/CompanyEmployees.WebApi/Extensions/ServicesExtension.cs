@@ -36,5 +36,8 @@ namespace CompanyEmployees.WebApi.Extensions
         public static void ConfigureSqlContext(this IServiceCollection services, IConfiguration configuration) => 
             services.AddDbContext<CompanyEmployeeDbContext>(opts =>
                 opts.UseSqlServer(configuration.GetConnectionString(CompanyEmployeesConsts.DefaultConnection)));
+
+        public static void ConfigureAutoMapper(this IServiceCollection services)
+            => services.AddAutoMapper(typeof(ApplicationMappingProfile));
     }
 }

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.Domain\\CompanyEmployees.Domain.csproj": {}
+    "D:\\projects\\ASP.NET\\Core\\CompanyEmployees\\src\\CompanyEmployees.Domain\\CompanyEmployees.Domain.csproj": {}
   },
   "projects": {
-    "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.Domain.Shared\\CompanyEmployees.Domain.Shared.csproj": {
+    "D:\\projects\\ASP.NET\\Core\\CompanyEmployees\\src\\CompanyEmployees.Domain.Shared\\CompanyEmployees.Domain.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.Domain.Shared\\CompanyEmployees.Domain.Shared.csproj",
+        "projectUniqueName": "D:\\projects\\ASP.NET\\Core\\CompanyEmployees\\src\\CompanyEmployees.Domain.Shared\\CompanyEmployees.Domain.Shared.csproj",
         "projectName": "CompanyEmployees.Domain.Shared",
-        "projectPath": "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.Domain.Shared\\CompanyEmployees.Domain.Shared.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.Domain.Shared\\obj\\",
+        "projectPath": "D:\\projects\\ASP.NET\\Core\\CompanyEmployees\\src\\CompanyEmployees.Domain.Shared\\CompanyEmployees.Domain.Shared.csproj",
+        "packagesPath": "C:\\Users\\EBH\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\ASP.NET\\Core\\CompanyEmployees\\src\\CompanyEmployees.Domain.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\EBH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\Developer\\AspNet\\nuget": {},
+          "D:\\projects\\ASP.NET\\Abp\\esh3arTech_versions\\negut": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -66,24 +66,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.313/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.Domain\\CompanyEmployees.Domain.csproj": {
+    "D:\\projects\\ASP.NET\\Core\\CompanyEmployees\\src\\CompanyEmployees.Domain\\CompanyEmployees.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.Domain\\CompanyEmployees.Domain.csproj",
+        "projectUniqueName": "D:\\projects\\ASP.NET\\Core\\CompanyEmployees\\src\\CompanyEmployees.Domain\\CompanyEmployees.Domain.csproj",
         "projectName": "CompanyEmployees.Domain",
-        "projectPath": "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.Domain\\CompanyEmployees.Domain.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.Domain\\obj\\",
+        "projectPath": "D:\\projects\\ASP.NET\\Core\\CompanyEmployees\\src\\CompanyEmployees.Domain\\CompanyEmployees.Domain.csproj",
+        "packagesPath": "C:\\Users\\EBH\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\ASP.NET\\Core\\CompanyEmployees\\src\\CompanyEmployees.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\EBH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -92,15 +92,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\Developer\\AspNet\\nuget": {},
+          "D:\\projects\\ASP.NET\\Abp\\esh3arTech_versions\\negut": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.Domain.Shared\\CompanyEmployees.Domain.Shared.csproj": {
-                "projectPath": "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.Domain.Shared\\CompanyEmployees.Domain.Shared.csproj"
+              "D:\\projects\\ASP.NET\\Core\\CompanyEmployees\\src\\CompanyEmployees.Domain.Shared\\CompanyEmployees.Domain.Shared.csproj": {
+                "projectPath": "D:\\projects\\ASP.NET\\Core\\CompanyEmployees\\src\\CompanyEmployees.Domain.Shared\\CompanyEmployees.Domain.Shared.csproj"
               }
             }
           }
@@ -115,7 +115,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -136,7 +136,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.313/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

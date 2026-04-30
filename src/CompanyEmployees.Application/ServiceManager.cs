@@ -1,4 +1,5 @@
-﻿using CompanyEmployees.Application.Companies;
+﻿using AutoMapper;
+using CompanyEmployees.Application.Companies;
 using CompanyEmployees.Application.Contract;
 using CompanyEmployees.Application.Contract.Companies;
 using CompanyEmployees.Application.Contract.Employees;
@@ -13,9 +14,9 @@ namespace CompanyEmployees.Application
         private readonly Lazy<ICompanyService> _companyService;
         private readonly Lazy<IEmployeeService> _employeeService;
 
-        public ServiceManager(IRepositoryManager repository, ILoggerManager logger)
+        public ServiceManager(IRepositoryManager repository, ILoggerManager logger, IMapper mapper)
         {
-            _companyService = new Lazy<ICompanyService>(() => new CompanyService(repository, logger));
+            _companyService = new Lazy<ICompanyService>(() => new CompanyService(repository, logger, mapper));
             _employeeService = new Lazy<IEmployeeService>(() => new EmployeeService(repository, logger));
         }
 

@@ -1,3 +1,4 @@
+using CompanyEmployees.Application;
 using CompanyEmployees.Domain.Shared;
 using CompanyEmployees.WebApi.Extensions;
 using NLog;
@@ -10,7 +11,7 @@ builder.Services.ConfigureLogger();
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServicesManager();
 builder.Services.ConfigureSqlContext(builder.Configuration);
-builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.ConfigureAutoMapper();
 
 builder.Services.AddControllers()
     .AddApplicationPart(typeof(CompanyEmployee.RESTful.AssemblyReference).Assembly);

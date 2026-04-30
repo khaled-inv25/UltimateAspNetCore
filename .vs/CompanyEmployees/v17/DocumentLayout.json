@@ -1,37 +1,16 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{9D40E011-81D5-48B1-90F0-76F1D96FB9D2}|src\\CompanyEmployees.WebApi\\CompanyEmployees.WebApi.csproj|d:\\developer\\aspnet\\projects\\core\\companyemployees\\src\\companyemployees.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D40E011-81D5-48B1-90F0-76F1D96FB9D2}|src\\CompanyEmployees.WebApi\\CompanyEmployees.WebApi.csproj|solutionrelative:src\\companyemployees.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EEBB073C-7375-4602-B2E7-AAA65C095DB7}|src\\CompanyEmployees.Application\\CompanyEmployees.Application.csproj|d:\\developer\\aspnet\\projects\\core\\companyemployees\\src\\companyemployees.application\\companies\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EEBB073C-7375-4602-B2E7-AAA65C095DB7}|src\\CompanyEmployees.Application\\CompanyEmployees.Application.csproj|solutionrelative:src\\companyemployees.application\\companies\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02566535-C921-4B97-AA06-52384C7BD886}|src\\CompanyEmployee.RESTful\\CompanyEmployee.RESTful.csproj|d:\\developer\\aspnet\\projects\\core\\companyemployees\\src\\companyemployee.restful\\controllers\\companiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02566535-C921-4B97-AA06-52384C7BD886}|src\\CompanyEmployee.RESTful\\CompanyEmployee.RESTful.csproj|solutionrelative:src\\companyemployee.restful\\controllers\\companiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F2DC84F-0C1C-4762-BC66-3D29CF0F8A9A}|src\\CompanyEmployees.Application.Contract\\CompanyEmployees.Application.Contract.csproj|d:\\developer\\aspnet\\projects\\core\\companyemployees\\src\\companyemployees.application.contract\\companies\\icompanyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F2DC84F-0C1C-4762-BC66-3D29CF0F8A9A}|src\\CompanyEmployees.Application.Contract\\CompanyEmployees.Application.Contract.csproj|solutionrelative:src\\companyemployees.application.contract\\companies\\icompanyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "D:\\projects\\ASP.NET\\Core\\CompanyEmployees\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 568,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -41,56 +20,12 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.WebApi\\Program.cs",
-              "RelativeDocumentMoniker": "src\\CompanyEmployees.WebApi\\Program.cs",
-              "ToolTip": "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.WebApi\\Program.cs",
-              "RelativeToolTip": "src\\CompanyEmployees.WebApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-29T02:31:31.772Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CompaniesController.cs",
-              "DocumentMoniker": "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployee.RESTful\\Controllers\\CompaniesController.cs",
-              "RelativeDocumentMoniker": "src\\CompanyEmployee.RESTful\\Controllers\\CompaniesController.cs",
-              "ToolTip": "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployee.RESTful\\Controllers\\CompaniesController.cs",
-              "RelativeToolTip": "src\\CompanyEmployee.RESTful\\Controllers\\CompaniesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T04:12:22.839Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CompanyService.cs",
-              "DocumentMoniker": "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.Application\\Companies\\CompanyService.cs",
-              "RelativeDocumentMoniker": "src\\CompanyEmployees.Application\\Companies\\CompanyService.cs",
-              "ToolTip": "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.Application\\Companies\\CompanyService.cs",
-              "RelativeToolTip": "src\\CompanyEmployees.Application\\Companies\\CompanyService.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAiwBoAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T04:03:58.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ICompanyService.cs",
-              "DocumentMoniker": "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.Application.Contract\\Companies\\ICompanyService.cs",
-              "RelativeDocumentMoniker": "src\\CompanyEmployees.Application.Contract\\Companies\\ICompanyService.cs",
-              "ToolTip": "D:\\Developer\\AspNet\\Projects\\Core\\CompanyEmployees\\src\\CompanyEmployees.Application.Contract\\Companies\\ICompanyService.cs",
-              "RelativeToolTip": "src\\CompanyEmployees.Application.Contract\\Companies\\ICompanyService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T04:02:52.869Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         }

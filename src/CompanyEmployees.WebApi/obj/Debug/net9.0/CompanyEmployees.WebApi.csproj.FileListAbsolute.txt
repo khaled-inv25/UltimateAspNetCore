@@ -351,3 +351,9 @@ D:\Developer\AspNet\Projects\Core\CompanyEmployees\src\CompanyEmployees.WebApi\b
 D:\Developer\AspNet\Projects\Core\CompanyEmployees\src\CompanyEmployees.WebApi\bin\Debug\net9.0\CompanyEmployee.RESTful.pdb
 D:\Developer\AspNet\Projects\Core\CompanyEmployees\src\CompanyEmployees.WebApi\obj\Debug\net9.0\CompanyEmployees.WebApi.MvcApplicationPartsAssemblyInfo.cs
 D:\Developer\AspNet\Projects\Core\CompanyEmployees\src\CompanyEmployees.WebApi\obj\Debug\net9.0\CompanyEmployees.WebApi.sourcelink.json
+D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.WebApi\bin\Debug\net9.0\AutoMapper.dll
+D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.WebApi\bin\Debug\net9.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.WebApi\bin\Debug\net9.0\CompanyEmployee.RESTful.dll
+D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.WebApi\bin\Debug\net9.0\CompanyEmployee.RESTful.pdb
+D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.WebApi\obj\Debug\net9.0\CompanyEmployees.WebApi.MvcApplicationPartsAssemblyInfo.cs
+D:\projects\ASP.NET\Core\CompanyEmployees\src\CompanyEmployees.WebApi\obj\Debug\net9.0\CompanyEmployees.WebApi.sourcelink.json
