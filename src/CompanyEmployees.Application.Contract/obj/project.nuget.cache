@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pB98yzHb1ng=",
+  "dgSpecHash": "m8J2aTMhEYM=",
   "success": true,
-  "projectFilePath": "D:\\projects\\ASP.NET\\Core\\CompanyEmployees\\src\\CompanyEmployees.Application.Contract\\CompanyEmployees.Application.Contract.csproj",
+  "projectFilePath": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application.Contract\\CompanyEmployees.Application.Contract.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

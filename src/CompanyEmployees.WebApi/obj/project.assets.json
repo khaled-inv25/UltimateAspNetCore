@@ -4916,23 +4916,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\EBH\\.nuget\\packages\\": {},
+    "C:\\Users\\DELL\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projects\\ASP.NET\\Core\\CompanyEmployees\\src\\CompanyEmployees.WebApi\\CompanyEmployees.WebApi.csproj",
+      "projectUniqueName": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.WebApi\\CompanyEmployees.WebApi.csproj",
       "projectName": "CompanyEmployees.WebApi",
-      "projectPath": "D:\\projects\\ASP.NET\\Core\\CompanyEmployees\\src\\CompanyEmployees.WebApi\\CompanyEmployees.WebApi.csproj",
-      "packagesPath": "C:\\Users\\EBH\\.nuget\\packages\\",
-      "outputPath": "D:\\projects\\ASP.NET\\Core\\CompanyEmployees\\src\\CompanyEmployees.WebApi\\obj\\",
+      "projectPath": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.WebApi\\CompanyEmployees.WebApi.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\EBH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4941,21 +4941,21 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "D:\\projects\\ASP.NET\\Abp\\esh3arTech_versions\\negut": {},
+        "D:\\Developer\\AspNet\\nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\projects\\ASP.NET\\Core\\CompanyEmployees\\src\\CompanyEmployee.RESTful\\CompanyEmployee.RESTful.csproj": {
-              "projectPath": "D:\\projects\\ASP.NET\\Core\\CompanyEmployees\\src\\CompanyEmployee.RESTful\\CompanyEmployee.RESTful.csproj"
+            "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployee.RESTful\\CompanyEmployee.RESTful.csproj": {
+              "projectPath": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployee.RESTful\\CompanyEmployee.RESTful.csproj"
             },
-            "D:\\projects\\ASP.NET\\Core\\CompanyEmployees\\src\\CompanyEmployees.Application\\CompanyEmployees.Application.csproj": {
-              "projectPath": "D:\\projects\\ASP.NET\\Core\\CompanyEmployees\\src\\CompanyEmployees.Application\\CompanyEmployees.Application.csproj"
+            "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application\\CompanyEmployees.Application.csproj": {
+              "projectPath": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application\\CompanyEmployees.Application.csproj"
             },
-            "D:\\projects\\ASP.NET\\Core\\CompanyEmployees\\src\\CompanyEmployees.EntityFramework\\CompanyEmployees.EntityFramework.csproj": {
-              "projectPath": "D:\\projects\\ASP.NET\\Core\\CompanyEmployees\\src\\CompanyEmployees.EntityFramework\\CompanyEmployees.EntityFramework.csproj"
+            "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.EntityFramework\\CompanyEmployees.EntityFramework.csproj": {
+              "projectPath": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.EntityFramework\\CompanyEmployees.EntityFramework.csproj"
             }
           }
         }
@@ -4970,7 +4970,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -5006,7 +5006,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.313/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
