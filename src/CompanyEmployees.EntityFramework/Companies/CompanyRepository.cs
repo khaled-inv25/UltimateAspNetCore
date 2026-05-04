@@ -9,11 +9,17 @@ namespace CompanyEmployees.EntityFramework.Companies
         {
         }
 
+        public async Task CreateCompanyAsync(Company company)
+            => await CreateAsync(company);
+
         public async Task<IEnumerable<Company>> GetAllCompaniesAsync(bool trachChanges = false)
         {
             var query = FindAll(trachChanges).OrderBy(c => c.Name);
 
             return await query.ToListAsync();
         }
+
+        public async Task<Company?> GetCompanyAsync(Guid id, bool trackChanges) 
+            => await FindByCondition(c => c.Id.Equals(id), trackChanges).FirstOrDefaultAsync();
     }
 }

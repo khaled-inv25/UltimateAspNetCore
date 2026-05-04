@@ -21,5 +21,8 @@ namespace CompanyEmployees.EntityFramework
         public void Delete(T entity) => DbContext.Remove(entity);
 
         public void Update(T entity) => DbContext.Update(entity);
+
+        public async Task<bool> AnyAsync() 
+            => await DbContext.Set<T>().AnyAsync();
     }
 }

@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using CompanyEmployees.Application.Contract.Companies;
+using CompanyEmployees.Application.Contract.Employees;
 using CompanyEmployees.Domain.Companies;
+using CompanyEmployees.Domain.Employees;
 
 namespace CompanyEmployees.Application
 {
@@ -9,6 +11,9 @@ namespace CompanyEmployees.Application
         public ApplicationMappingProfile()
         {
             CreateMap<Company, CompanyDto>();
+            CreateMap<CreateCompanyDto, Company>();
+
+            CreateMap<Employee, EmployeeDto>();
         }
     }
 }

@@ -22,6 +22,6 @@ namespace CompanyEmployees.EntityFramework
         public ICompanyRepository Company => _companyRepository.Value;
         public IEmployeeRepository Employee => _employeeRepository.Value;
 
-        public async Task Save() => await _dbContext.SaveChangesAsync();
+        public async Task SaveAsync() => await _dbContext.SaveChangesAsync();
     }
 }

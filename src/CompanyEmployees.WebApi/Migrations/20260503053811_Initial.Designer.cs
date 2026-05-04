@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CompanyEmployees.WebApi.Migrations
 {
     [DbContext(typeof(CompanyEmployeeDbContext))]
-    [Migration("20260427043150_Initial")]
+    [Migration("20260503053811_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -106,72 +106,6 @@ namespace CompanyEmployees.WebApi.Migrations
                     b.HasIndex("CompanyId");
 
                     b.ToTable("Employees");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("bc1f78cf-c7e3-4e78-b5d9-f4a1a3a1ddce"),
-                            Age = 30,
-                            CompanyId = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
-                            Name = "Khaled Ali",
-                            Position = "Sofrware Developer"
-                        },
-                        new
-                        {
-                            Id = new Guid("617f7f3f-1188-47c8-9ecc-df285c605fa0"),
-                            Age = 24,
-                            CompanyId = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
-                            Name = "Mohammed Al-Batool",
-                            Position = "Mobile Developer"
-                        },
-                        new
-                        {
-                            Id = new Guid("6adcb64f-178f-4a37-bc3a-0261972d9375"),
-                            Age = 24,
-                            CompanyId = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
-                            Name = "Osamah Al-Obary",
-                            Position = "Software Developer"
-                        },
-                        new
-                        {
-                            Id = new Guid("babb5dff-d056-4620-a14c-4acc2f421af6"),
-                            Age = 26,
-                            CompanyId = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
-                            Name = "Ahmed Al-Hemuary",
-                            Position = "Tester"
-                        },
-                        new
-                        {
-                            Id = new Guid("a4ff3237-13c3-4ee1-9f8b-57d2e38b997a"),
-                            Age = 32,
-                            CompanyId = new Guid("3d490a70-94ce-4d15-9494-5248280c2ce3"),
-                            Name = "Osamah Salam",
-                            Position = "Customer Service"
-                        },
-                        new
-                        {
-                            Id = new Guid("7cce86d2-ee60-4de9-a098-ab8e45cce73a"),
-                            Age = 26,
-                            CompanyId = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
-                            Name = "Sam Raiden",
-                            Position = "Software developer"
-                        },
-                        new
-                        {
-                            Id = new Guid("ae6dff3c-abf4-4d79-a74e-3e14648db2f5"),
-                            Age = 30,
-                            CompanyId = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
-                            Name = "Jana McLeaf",
-                            Position = "Software developer"
-                        },
-                        new
-                        {
-                            Id = new Guid("50c1aed5-a50a-4f64-9533-910e68c30206"),
-                            Age = 35,
-                            CompanyId = new Guid("3d490a70-94ce-4d15-9494-5248280c2ce3"),
-                            Name = "Kane Miller",
-                            Position = "Administrator"
-                        });
                 });
 
             modelBuilder.Entity("CompanyEmployees.Domain.Employees.Employee", b =>

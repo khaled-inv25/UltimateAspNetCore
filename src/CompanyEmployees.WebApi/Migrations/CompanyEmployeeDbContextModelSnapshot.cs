@@ -107,33 +107,33 @@ namespace CompanyEmployees.WebApi.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("bc1f78cf-c7e3-4e78-b5d9-f4a1a3a1ddce"),
+                            Id = new Guid("ffa02d9a-37d9-4565-9f2f-bfd079666116"),
                             Age = 30,
-                            CompanyId = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
+                            CompanyId = new Guid("a627d731-5382-4bf4-87c0-4f256fddd004"),
                             Name = "Khaled Ali",
-                            Position = "Sofrware Developer"
+                            Position = "Software developer"
                         },
                         new
                         {
-                            Id = new Guid("617f7f3f-1188-47c8-9ecc-df285c605fa0"),
+                            Id = new Guid("b222cc38-2ecb-4314-88e9-2c8a7ce4a554"),
                             Age = 24,
-                            CompanyId = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
+                            CompanyId = new Guid("a627d731-5382-4bf4-87c0-4f256fddd004"),
                             Name = "Mohammed Al-Batool",
-                            Position = "Mobile Developer"
+                            Position = "Mobile developer"
                         },
                         new
                         {
-                            Id = new Guid("6adcb64f-178f-4a37-bc3a-0261972d9375"),
+                            Id = new Guid("fc61c65c-1861-4d0d-b091-8c85a2c21171"),
                             Age = 24,
-                            CompanyId = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
+                            CompanyId = new Guid("a627d731-5382-4bf4-87c0-4f256fddd004"),
                             Name = "Osamah Al-Obary",
-                            Position = "Software Developer"
+                            Position = "Software developer"
                         },
                         new
                         {
                             Id = new Guid("babb5dff-d056-4620-a14c-4acc2f421af6"),
                             Age = 26,
-                            CompanyId = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
+                            CompanyId = new Guid("a627d731-5382-4bf4-87c0-4f256fddd004"),
                             Name = "Ahmed Al-Hemuary",
                             Position = "Tester"
                         },
@@ -141,9 +141,9 @@ namespace CompanyEmployees.WebApi.Migrations
                         {
                             Id = new Guid("a4ff3237-13c3-4ee1-9f8b-57d2e38b997a"),
                             Age = 32,
-                            CompanyId = new Guid("3d490a70-94ce-4d15-9494-5248280c2ce3"),
+                            CompanyId = new Guid("73625b4e-4149-4912-b6d9-08a595d78124"),
                             Name = "Osamah Salam",
-                            Position = "Customer Service"
+                            Position = "Customer service"
                         },
                         new
                         {
@@ -151,7 +151,7 @@ namespace CompanyEmployees.WebApi.Migrations
                             Age = 26,
                             CompanyId = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
                             Name = "Sam Raiden",
-                            Position = "Software developer"
+                            Position = "Accounting"
                         },
                         new
                         {
@@ -159,7 +159,7 @@ namespace CompanyEmployees.WebApi.Migrations
                             Age = 30,
                             CompanyId = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
                             Name = "Jana McLeaf",
-                            Position = "Software developer"
+                            Position = "Marketing "
                         },
                         new
                         {
@@ -167,7 +167,7 @@ namespace CompanyEmployees.WebApi.Migrations
                             Age = 35,
                             CompanyId = new Guid("3d490a70-94ce-4d15-9494-5248280c2ce3"),
                             Name = "Kane Miller",
-                            Position = "Administrator"
+                            Position = "Adminstrater"
                         });
                 });
 

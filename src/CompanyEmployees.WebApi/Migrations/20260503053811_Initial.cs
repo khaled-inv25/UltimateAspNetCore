@@ -59,21 +59,6 @@ namespace CompanyEmployees.WebApi.Migrations
                     { new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"), "583 Wall Dr. Gwynn Oak, MD 21207", "USA", "IT_Solutions Ltd" }
                 });
 
-            migrationBuilder.InsertData(
-                table: "Employees",
-                columns: new[] { "Id", "Age", "CompanyId", "Name", "Position" },
-                values: new object[,]
-                {
-                    { new Guid("50c1aed5-a50a-4f64-9533-910e68c30206"), 35, new Guid("3d490a70-94ce-4d15-9494-5248280c2ce3"), "Kane Miller", "Administrator" },
-                    { new Guid("617f7f3f-1188-47c8-9ecc-df285c605fa0"), 24, new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"), "Mohammed Al-Batool", "Mobile Developer" },
-                    { new Guid("6adcb64f-178f-4a37-bc3a-0261972d9375"), 24, new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"), "Osamah Al-Obary", "Software Developer" },
-                    { new Guid("7cce86d2-ee60-4de9-a098-ab8e45cce73a"), 26, new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"), "Sam Raiden", "Software developer" },
-                    { new Guid("a4ff3237-13c3-4ee1-9f8b-57d2e38b997a"), 32, new Guid("3d490a70-94ce-4d15-9494-5248280c2ce3"), "Osamah Salam", "Customer Service" },
-                    { new Guid("ae6dff3c-abf4-4d79-a74e-3e14648db2f5"), 30, new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"), "Jana McLeaf", "Software developer" },
-                    { new Guid("babb5dff-d056-4620-a14c-4acc2f421af6"), 26, new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"), "Ahmed Al-Hemuary", "Tester" },
-                    { new Guid("bc1f78cf-c7e3-4e78-b5d9-f4a1a3a1ddce"), 30, new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"), "Khaled Ali", "Sofrware Developer" }
-                });
-
             migrationBuilder.CreateIndex(
                 name: "IX_Employees_CompanyId",
                 table: "Employees",
