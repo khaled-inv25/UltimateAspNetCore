@@ -2,7 +2,9 @@
 {
     public static class CompanyEmployeesConsts
     {
-        public static string CorsPolicy = "CorsPolicy";
-        public static string DefaultConnection = "DefaultConnection";
+        public const string CorsPolicy = "CorsPolicy";
+        public const string DefaultConnection = "DefaultConnection";
+        public const string CompanyRoute = "CompanyById";
+        public const string EmployeeRoute = "GetEmployeeById";
     }
 }

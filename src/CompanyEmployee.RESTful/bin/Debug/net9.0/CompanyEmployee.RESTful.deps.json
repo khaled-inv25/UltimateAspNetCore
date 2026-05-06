@@ -15,8 +15,19 @@
         }
       },
       "CompanyEmployees.Application.Contract/1.0.0": {
+        "dependencies": {
+          "CompanyEmployees.Domain.Shared": "1.0.0"
+        },
         "runtime": {
           "CompanyEmployees.Application.Contract.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "CompanyEmployees.Domain.Shared/1.0.0": {
+        "runtime": {
+          "CompanyEmployees.Domain.Shared.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -31,6 +42,11 @@
       "sha512": ""
     },
     "CompanyEmployees.Application.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CompanyEmployees.Domain.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

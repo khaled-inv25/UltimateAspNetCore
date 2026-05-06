@@ -9,6 +9,12 @@ namespace CompanyEmployees.EntityFramework.Employees
         {
         }
 
+        public async Task CreateEmployeeAsync(Guid companyId, Employee employee)
+        {
+            employee.CompanyId = companyId;
+            await CreateAsync(employee);
+        }
+
         public async Task<Employee?> GetEmployeeById(Guid companyId, Guid id, bool trackChanges)
             => await FindByCondition(e => e.CompanyId.Equals(companyId) && e.Id.Equals(id), trackChanges)
             .FirstOrDefaultAsync();

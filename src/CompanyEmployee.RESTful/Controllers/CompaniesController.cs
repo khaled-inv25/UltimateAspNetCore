@@ -1,5 +1,6 @@
 ﻿using CompanyEmployees.Application.Contract;
 using CompanyEmployees.Application.Contract.Companies;
+using CompanyEmployees.Domain.Shared;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CompanyEmployee.RESTful.Controllers
@@ -21,23 +22,23 @@ namespace CompanyEmployee.RESTful.Controllers
             return Ok(await _serviceManager.CompanyService.GetAllCompanies(false));
         }
 
-        [HttpGet("{id:guid}", Name = "CompanyById")]
+        [HttpGet("{id:guid}", Name = CompanyEmployeesConsts.CompanyRoute)]
         public async Task<IActionResult> GetCompanyByIdAsync(Guid id)
         {
             return Ok(await _serviceManager.CompanyService.GetCompayByIdAsync(id, trackChanges: false));
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateCompanyAsync(CreateCompanyDto companyDto)
+        public async Task<IActionResult> CreateCompanyAsync([FromBody] CreateCompanyDto input)
         {
-            if ( companyDto is null)
+            if (input is null)
             {
-                return BadRequest("CompanyForCreationDto object is null");
+                return BadRequest(CompanyEmployeesErrorCodes.CreateCompanyObjectIsNull);
             }
 
-            var createdCompany = await _serviceManager.CompanyService.CreateCompanyAsync(companyDto);
+            var createdCompany = await _serviceManager.CompanyService.CreateCompanyAsync(input);
 
-            return CreatedAtRoute("CompanyById", new { id = createdCompany.Id }, createdCompany);
-         }
+            return CreatedAtRoute(CompanyEmployeesConsts.CompanyRoute, new { id = createdCompany.Id }, createdCompany);
+        }
     }
 }

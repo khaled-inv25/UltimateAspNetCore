@@ -18,7 +18,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "companyDto",
+        "Name": "input",
         "Type": "CompanyEmployees.Application.Contract.Companies.CreateCompanyDto",
         "IsRequired": true
       }
@@ -43,6 +43,27 @@
   },
   {
     "ContainingType": "CompanyEmployee.RESTful.Controllers.EmployeesController",
+    "Method": "CreateEmployeeForCompanyAsync",
+    "RelativePath": "api/companies/{companyId}/employees",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "companyId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "input",
+        "Type": "CompanyEmployees.Application.Contract.Employees.CreateEmployeeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompanyEmployee.RESTful.Controllers.EmployeesController",
     "Method": "GetEmplyeesForCompanyAsync",
     "RelativePath": "api/companies/{companyId}/employees/{id}",
     "HttpMethod": "GET",
@@ -60,7 +81,8 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [],
+    "EndpointName": "GetEmployeeById"
   },
   {
     "ContainingType": "CompanyEmployee.RESTful.Controllers.CompaniesController",

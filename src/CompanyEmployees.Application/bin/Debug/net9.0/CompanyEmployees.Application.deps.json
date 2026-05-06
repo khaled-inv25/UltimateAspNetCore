@@ -82,6 +82,9 @@
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
       "CompanyEmployees.Application.Contract/1.0.0": {
+        "dependencies": {
+          "CompanyEmployees.Domain.Shared": "1.0.0"
+        },
         "runtime": {
           "CompanyEmployees.Application.Contract.dll": {
             "assemblyVersion": "1.0.0.0",
