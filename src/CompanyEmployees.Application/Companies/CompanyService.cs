@@ -41,6 +41,23 @@ namespace CompanyEmployees.Application.Companies
             return _mapper.Map<IEnumerable<CompanyDto>>(companies); ;
         }
 
+        public async Task<IEnumerable<CompanyDto>> GetByIdsAsync(IEnumerable<Guid> ids, bool trackChanges = false)
+        {
+            if (ids is null)
+            {
+                throw new BadRequestException(CompanyEmployeesErrorCodes.GuidsIsRequired);
+            }
+
+            var companies = await _repositoryManager.Company.GetByIdsAsync(ids, trackChanges);
+
+            if (ids.Count() != companies.Count())
+            {
+                throw new BadRequestException(CompanyEmployeesErrorCodes.ConpaniesMismatchFetch);
+            }
+
+            return _mapper.Map<IEnumerable<CompanyDto>>(companies);
+        }
+
         public async Task<CompanyDto> GetCompayByIdAsync(Guid id, bool trackChanges)
         {
             var company = await _repositoryManager.Company.GetCompanyAsync(id, trackChanges);

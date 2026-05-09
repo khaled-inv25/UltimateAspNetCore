@@ -1,4 +1,8 @@
-﻿namespace CompanyEmployees.Application.Contract.Companies
+﻿using CompanyEmployees.Application.Contract.Employees;
+
+namespace CompanyEmployees.Application.Contract.Companies
 {
-    public record CreateCompanyDto(string Name, string? Address, string? Country);
+    [Serializable]
+    public record CreateCompanyDto(string Name, string? Address, string? Country, 
+        IEnumerable<CreateEmployeeDto> Employees);
 }

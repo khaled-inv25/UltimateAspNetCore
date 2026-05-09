@@ -28,6 +28,12 @@ namespace CompanyEmployee.RESTful.Controllers
             return Ok(await _serviceManager.CompanyService.GetCompayByIdAsync(id, trackChanges: false));
         }
 
+        [HttpGet("collection/({ids})", Name = "CompanyCollection")]
+        public async Task<IActionResult> GetByIds(IEnumerable<Guid> ids)
+        {
+            return Ok(await _serviceManager.CompanyService.GetByIdsAsync(ids, trackChanges: false));
+        }
+
         [HttpPost]
         public async Task<IActionResult> CreateCompanyAsync([FromBody] CreateCompanyDto input)
         {

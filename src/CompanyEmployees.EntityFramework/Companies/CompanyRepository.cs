@@ -19,6 +19,9 @@ namespace CompanyEmployees.EntityFramework.Companies
             return await query.ToListAsync();
         }
 
+        public async Task<IEnumerable<Company>> GetByIdsAsync(IEnumerable<Guid> ids, bool trackChanges = false)
+            => await FindByCondition(c => ids.Contains(c.Id), trackChanges).ToListAsync();
+
         public async Task<Company?> GetCompanyAsync(Guid id, bool trackChanges) 
             => await FindByCondition(c => c.Id.Equals(id), trackChanges).FirstOrDefaultAsync();
     }

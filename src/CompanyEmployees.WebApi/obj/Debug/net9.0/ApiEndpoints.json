@@ -100,5 +100,27 @@
     ],
     "ReturnTypes": [],
     "EndpointName": "CompanyById"
+  },
+  {
+    "ContainingType": "CompanyEmployee.RESTful.Controllers.CompaniesController",
+    "Method": "GetByIds",
+    "RelativePath": "api/companies/collection/({ids})",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ids",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      },
+      {
+        "Name": "ids",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "CompanyCollection"
   }
 ]
