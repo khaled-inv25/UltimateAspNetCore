@@ -5,6 +5,7 @@
         public const string CorsPolicy = "CorsPolicy";
         public const string DefaultConnection = "DefaultConnection";
         public const string CompanyRoute = "CompanyById";
+        public const string CompanyCollectionRoute = "CompanyCollection";
         public const string EmployeeRoute = "GetEmployeeById";
     }
 }

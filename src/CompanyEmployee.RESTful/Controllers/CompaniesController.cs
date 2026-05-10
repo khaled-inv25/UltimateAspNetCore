@@ -28,7 +28,7 @@ namespace CompanyEmployee.RESTful.Controllers
             return Ok(await _serviceManager.CompanyService.GetCompayByIdAsync(id, trackChanges: false));
         }
 
-        [HttpGet("collection/({ids})", Name = "CompanyCollection")]
+        [HttpGet("collection/({ids})", Name = CompanyEmployeesConsts.CompanyCollectionRoute)]
         public async Task<IActionResult> GetByIds(IEnumerable<Guid> ids)
         {
             return Ok(await _serviceManager.CompanyService.GetByIdsAsync(ids, trackChanges: false));
@@ -45,6 +45,14 @@ namespace CompanyEmployee.RESTful.Controllers
             var createdCompany = await _serviceManager.CompanyService.CreateCompanyAsync(input);
 
             return CreatedAtRoute(CompanyEmployeesConsts.CompanyRoute, new { id = createdCompany.Id }, createdCompany);
+        }
+
+        [HttpPost("collection")]
+        public async Task<IActionResult> CreateCollection([FromBody] IEnumerable<CreateCompanyDto> input)
+        {
+            var (companies, ids) = await _serviceManager.CompanyService.CreateCompanyCollectionAsync(input);
+
+            return CreatedAtRoute(CompanyEmployeesConsts.CompanyCollectionRoute, new { ids }, companies);
         }
     }
 }

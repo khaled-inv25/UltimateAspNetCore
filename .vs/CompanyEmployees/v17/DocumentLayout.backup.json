@@ -7,24 +7,16 @@
       "RelativeMoniker": "D:0:0:{02566535-C921-4B97-AA06-52384C7BD886}|src\\CompanyEmployee.RESTful\\CompanyEmployee.RESTful.csproj|solutionrelative:src\\companyemployee.restful\\controllers\\companiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{46B81BAE-4A2C-4A42-A04B-98F3BA5A8345}|src\\CompanyEmployees.Domain.Shared\\CompanyEmployees.Domain.Shared.csproj|d:\\developer\\aspnet\\projects\\core\\ultimateaspnetcore\\src\\companyemployees.domain.shared\\companyemployeesconsts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46B81BAE-4A2C-4A42-A04B-98F3BA5A8345}|src\\CompanyEmployees.Domain.Shared\\CompanyEmployees.Domain.Shared.csproj|solutionrelative:src\\companyemployees.domain.shared\\companyemployeesconsts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EEBB073C-7375-4602-B2E7-AAA65C095DB7}|src\\CompanyEmployees.Application\\CompanyEmployees.Application.csproj|d:\\developer\\aspnet\\projects\\core\\ultimateaspnetcore\\src\\companyemployees.application\\companies\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EEBB073C-7375-4602-B2E7-AAA65C095DB7}|src\\CompanyEmployees.Application\\CompanyEmployees.Application.csproj|solutionrelative:src\\companyemployees.application\\companies\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0F2DC84F-0C1C-4762-BC66-3D29CF0F8A9A}|src\\CompanyEmployees.Application.Contract\\CompanyEmployees.Application.Contract.csproj|d:\\developer\\aspnet\\projects\\core\\ultimateaspnetcore\\src\\companyemployees.application.contract\\companies\\icompanyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F2DC84F-0C1C-4762-BC66-3D29CF0F8A9A}|src\\CompanyEmployees.Application.Contract\\CompanyEmployees.Application.Contract.csproj|solutionrelative:src\\companyemployees.application.contract\\companies\\icompanyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55505320-EFBB-4DAD-A5F3-B0A50912C0A8}|src\\CompanyEmployees.Domain\\CompanyEmployees.Domain.csproj|d:\\developer\\aspnet\\projects\\core\\ultimateaspnetcore\\src\\companyemployees.domain\\companies\\icompanyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55505320-EFBB-4DAD-A5F3-B0A50912C0A8}|src\\CompanyEmployees.Domain\\CompanyEmployees.Domain.csproj|solutionrelative:src\\companyemployees.domain\\companies\\icompanyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E6C8AFF-0EC0-4BF1-B3A8-5A8E0CEE3806}|src\\CompanyEmployees.EntityFramework\\CompanyEmployees.EntityFramework.csproj|d:\\developer\\aspnet\\projects\\core\\ultimateaspnetcore\\src\\companyemployees.entityframework\\companies\\companyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E6C8AFF-0EC0-4BF1-B3A8-5A8E0CEE3806}|src\\CompanyEmployees.EntityFramework\\CompanyEmployees.EntityFramework.csproj|solutionrelative:src\\companyemployees.entityframework\\companies\\companyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46B81BAE-4A2C-4A42-A04B-98F3BA5A8345}|src\\CompanyEmployees.Domain.Shared\\CompanyEmployees.Domain.Shared.csproj|d:\\developer\\aspnet\\projects\\core\\ultimateaspnetcore\\src\\companyemployees.domain.shared\\companyemployeeserrorcodes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46B81BAE-4A2C-4A42-A04B-98F3BA5A8345}|src\\CompanyEmployees.Domain.Shared\\CompanyEmployees.Domain.Shared.csproj|solutionrelative:src\\companyemployees.domain.shared\\companyemployeeserrorcodes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 568,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,15 +50,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CompanyEmployeesErrorCodes.cs",
-              "DocumentMoniker": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Domain.Shared\\CompanyEmployeesErrorCodes.cs",
-              "RelativeDocumentMoniker": "src\\CompanyEmployees.Domain.Shared\\CompanyEmployeesErrorCodes.cs",
-              "ToolTip": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Domain.Shared\\CompanyEmployeesErrorCodes.cs",
-              "RelativeToolTip": "src\\CompanyEmployees.Domain.Shared\\CompanyEmployeesErrorCodes.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAIwAoAAAAyAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "CompanyEmployeesConsts.cs",
+              "DocumentMoniker": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Domain.Shared\\CompanyEmployeesConsts.cs",
+              "RelativeDocumentMoniker": "src\\CompanyEmployees.Domain.Shared\\CompanyEmployeesConsts.cs",
+              "ToolTip": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Domain.Shared\\CompanyEmployeesConsts.cs",
+              "RelativeToolTip": "src\\CompanyEmployees.Domain.Shared\\CompanyEmployeesConsts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T14:52:04.338Z",
+              "WhenOpened": "2026-05-09T19:19:26.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CompanyService.cs",
+              "DocumentMoniker": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application\\Companies\\CompanyService.cs",
+              "RelativeDocumentMoniker": "src\\CompanyEmployees.Application\\Companies\\CompanyService.cs",
+              "ToolTip": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application\\Companies\\CompanyService.cs",
+              "RelativeToolTip": "src\\CompanyEmployees.Application\\Companies\\CompanyService.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAIwDcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T19:03:42.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ICompanyService.cs",
+              "DocumentMoniker": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application.Contract\\Companies\\ICompanyService.cs",
+              "RelativeDocumentMoniker": "src\\CompanyEmployees.Application.Contract\\Companies\\ICompanyService.cs",
+              "ToolTip": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application.Contract\\Companies\\ICompanyService.cs",
+              "RelativeToolTip": "src\\CompanyEmployees.Application.Contract\\Companies\\ICompanyService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T19:02:01.161Z",
               "EditorCaption": ""
             },
             {
@@ -75,63 +93,11 @@
               "Title": "CompaniesController.cs",
               "DocumentMoniker": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployee.RESTful\\Controllers\\CompaniesController.cs",
               "RelativeDocumentMoniker": "src\\CompanyEmployee.RESTful\\Controllers\\CompaniesController.cs",
-              "ToolTip": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployee.RESTful\\Controllers\\CompaniesController.cs*",
-              "RelativeToolTip": "src\\CompanyEmployee.RESTful\\Controllers\\CompaniesController.cs*",
-              "ViewState": "AgIAABIAAAAAAAAAAAAQwB8AAAAyAAAAAAAAAA==",
+              "ToolTip": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployee.RESTful\\Controllers\\CompaniesController.cs",
+              "RelativeToolTip": "src\\CompanyEmployee.RESTful\\Controllers\\CompaniesController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwDYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T14:28:06.554Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CompanyService.cs",
-              "DocumentMoniker": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application\\Companies\\CompanyService.cs",
-              "RelativeDocumentMoniker": "src\\CompanyEmployees.Application\\Companies\\CompanyService.cs",
-              "ToolTip": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application\\Companies\\CompanyService.cs",
-              "RelativeToolTip": "src\\CompanyEmployees.Application\\Companies\\CompanyService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T14:14:06.276Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ICompanyService.cs",
-              "DocumentMoniker": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application.Contract\\Companies\\ICompanyService.cs",
-              "RelativeDocumentMoniker": "src\\CompanyEmployees.Application.Contract\\Companies\\ICompanyService.cs",
-              "ToolTip": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application.Contract\\Companies\\ICompanyService.cs",
-              "RelativeToolTip": "src\\CompanyEmployees.Application.Contract\\Companies\\ICompanyService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T14:12:41.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ICompanyRepository.cs",
-              "DocumentMoniker": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Domain\\Companies\\ICompanyRepository.cs",
-              "RelativeDocumentMoniker": "src\\CompanyEmployees.Domain\\Companies\\ICompanyRepository.cs",
-              "ToolTip": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Domain\\Companies\\ICompanyRepository.cs",
-              "RelativeToolTip": "src\\CompanyEmployees.Domain\\Companies\\ICompanyRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAABjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T13:57:44.842Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CompanyRepository.cs",
-              "DocumentMoniker": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.EntityFramework\\Companies\\CompanyRepository.cs",
-              "RelativeDocumentMoniker": "src\\CompanyEmployees.EntityFramework\\Companies\\CompanyRepository.cs",
-              "ToolTip": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.EntityFramework\\Companies\\CompanyRepository.cs",
-              "RelativeToolTip": "src\\CompanyEmployees.EntityFramework\\Companies\\CompanyRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T13:57:30.825Z",
+              "WhenOpened": "2026-05-09T19:01:04.728Z",
               "EditorCaption": ""
             }
           ]

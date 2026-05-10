@@ -34,6 +34,28 @@ namespace CompanyEmployees.Application.Companies
             return _mapper.Map<CompanyDto>(company);
         }
 
+        public async Task<(IEnumerable<CompanyDto> companies, string ids)> CreateCompanyCollectionAsync(IEnumerable<CreateCompanyDto> input)
+        {
+            if (input is null)
+            {
+                throw new BadRequestException(CompanyEmployeesErrorCodes.CreateCompanyCollectionIsNull);
+            }
+
+            var companies = _mapper.Map<IEnumerable<Company>>(input);
+
+            foreach (var company in companies)
+            {
+                await _repositoryManager.Company.CreateCompanyAsync(company);
+            }
+
+            await _repositoryManager.SaveAsync();
+
+            var companyCollection = _mapper.Map<IEnumerable<CompanyDto>>(companies);
+            var ids = string.Join(",", companyCollection.Select(c => c.Id));
+
+            return (companies: companyCollection, ids);
+        }
+
         public async Task<IEnumerable<CompanyDto>> GetAllCompanies(bool trackChanges)
         {
             var companies =  await _repositoryManager.Company.GetAllCompaniesAsync(trackChanges);
