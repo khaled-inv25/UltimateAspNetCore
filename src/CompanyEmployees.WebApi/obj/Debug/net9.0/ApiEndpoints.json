@@ -103,7 +103,28 @@
   },
   {
     "ContainingType": "CompanyEmployee.RESTful.Controllers.CompaniesController",
-    "Method": "CreateCollection",
+    "Method": "TryBindCompany",
+    "RelativePath": "api/companies/binding/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "CompanyEmployees.Application.Contract.Companies.CompanyDto",
+        "IsRequired": false
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompanyEmployee.RESTful.Controllers.CompaniesController",
+    "Method": "CreateCollectionAsync",
     "RelativePath": "api/companies/collection",
     "HttpMethod": "POST",
     "IsController": true,
@@ -119,7 +140,7 @@
   },
   {
     "ContainingType": "CompanyEmployee.RESTful.Controllers.CompaniesController",
-    "Method": "GetByIds",
+    "Method": "GetByIdsAsync",
     "RelativePath": "api/companies/collection/({ids})",
     "HttpMethod": "GET",
     "IsController": true,
@@ -128,12 +149,7 @@
       {
         "Name": "ids",
         "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": true
-      },
-      {
-        "Name": "ids",
-        "Type": "",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [],

@@ -1,4 +1,5 @@
-﻿using CompanyEmployees.Application.Contract;
+﻿using CompanyEmployee.RESTful.ModelBinders;
+using CompanyEmployees.Application.Contract;
 using CompanyEmployees.Application.Contract.Companies;
 using CompanyEmployees.Domain.Shared;
 using Microsoft.AspNetCore.Mvc;
@@ -29,7 +30,7 @@ namespace CompanyEmployee.RESTful.Controllers
         }
 
         [HttpGet("collection/({ids})", Name = CompanyEmployeesConsts.CompanyCollectionRoute)]
-        public async Task<IActionResult> GetByIds(IEnumerable<Guid> ids)
+        public async Task<IActionResult> GetByIdsAsync([ModelBinder(BinderType = typeof(ArrayModelBinder))]IEnumerable<Guid> ids)
         {
             return Ok(await _serviceManager.CompanyService.GetByIdsAsync(ids, trackChanges: false));
         }
@@ -48,7 +49,7 @@ namespace CompanyEmployee.RESTful.Controllers
         }
 
         [HttpPost("collection")]
-        public async Task<IActionResult> CreateCollection([FromBody] IEnumerable<CreateCompanyDto> input)
+        public async Task<IActionResult> CreateCollectionAsync([FromBody] IEnumerable<CreateCompanyDto> input)
         {
             var (companies, ids) = await _serviceManager.CompanyService.CreateCompanyCollectionAsync(input);
 
