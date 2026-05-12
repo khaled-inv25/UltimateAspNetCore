@@ -85,6 +85,27 @@
     "EndpointName": "GetEmployeeById"
   },
   {
+    "ContainingType": "CompanyEmployee.RESTful.Controllers.EmployeesController",
+    "Method": "DeleteEmployeeAsync",
+    "RelativePath": "api/companies/{companyId}/employees/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "companyId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CompanyEmployee.RESTful.Controllers.CompaniesController",
     "Method": "GetCompanyByIdAsync",
     "RelativePath": "api/companies/{id}",
@@ -100,27 +121,6 @@
     ],
     "ReturnTypes": [],
     "EndpointName": "CompanyById"
-  },
-  {
-    "ContainingType": "CompanyEmployee.RESTful.Controllers.CompaniesController",
-    "Method": "TryBindCompany",
-    "RelativePath": "api/companies/binding/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "CompanyEmployees.Application.Contract.Companies.CompanyDto",
-        "IsRequired": false
-      },
-      {
-        "Name": "id",
-        "Type": "",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   },
   {
     "ContainingType": "CompanyEmployee.RESTful.Controllers.CompaniesController",

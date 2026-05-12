@@ -24,5 +24,7 @@ namespace CompanyEmployees.EntityFramework.Companies
 
         public async Task<Company?> GetCompanyAsync(Guid id, bool trackChanges) 
             => await FindByCondition(c => c.Id.Equals(id), trackChanges).FirstOrDefaultAsync();
+
+        public void Remove(Company company) => Delete(company);
     }
 }

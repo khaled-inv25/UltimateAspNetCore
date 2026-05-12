@@ -6,5 +6,6 @@
 
         Task<Employee?> GetEmployeeById(Guid companyId, Guid id, bool trackChanges);
         Task CreateEmployeeAsync(Guid companyId, Employee employee);
+        void Remove(Employee employee);
     }
 }

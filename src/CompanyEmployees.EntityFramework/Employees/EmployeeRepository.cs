@@ -23,5 +23,7 @@ namespace CompanyEmployees.EntityFramework.Employees
             => await FindByCondition(e => e.CompanyId.Equals(companyId), trackChanges)
             .OrderBy(e => e.Name)
             .ToListAsync();
+
+        public void Remove(Employee employee) => Delete(employee);
     }
 }

@@ -69,6 +69,20 @@ namespace CompanyEmployees.Application.Employees
             return _mapper.Map<IEnumerable<EmployeeDto>>(employees);
         }
 
+        public async Task DeleteAsync(Guid companyId, Guid id, bool trackChanges)
+        {
+            if (await _repositoryManager.Company.GetCompanyAsync(companyId, false) is null)
+            { 
+                throw new NotFoundException(string.Format(CompanyEmployeesErrorCodes.CompanyNotFound, companyId));
+            }
+
+            var employee = await _repositoryManager.Employee.GetEmployeeById(companyId, id, false)
+                ?? throw new NotFoundException(string.Format(CompanyEmployeesErrorCodes.EmployeeNotFound, id));
+
+            _repositoryManager.Employee.Remove(employee);
+
+            await _repositoryManager.SaveAsync();
+        }
 
     }
 }
