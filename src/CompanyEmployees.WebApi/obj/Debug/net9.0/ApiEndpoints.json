@@ -86,6 +86,32 @@
   },
   {
     "ContainingType": "CompanyEmployee.RESTful.Controllers.EmployeesController",
+    "Method": "UpdateEmployeeForCompanyAsync",
+    "RelativePath": "api/companies/{companyId}/employees/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "companyId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "input",
+        "Type": "CompanyEmployees.Application.Contract.Employees.UpdateEmployeeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompanyEmployee.RESTful.Controllers.EmployeesController",
     "Method": "DeleteEmployeeAsync",
     "RelativePath": "api/companies/{companyId}/employees/{id}",
     "HttpMethod": "DELETE",

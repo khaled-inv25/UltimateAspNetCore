@@ -84,5 +84,20 @@ namespace CompanyEmployees.Application.Employees
             await _repositoryManager.SaveAsync();
         }
 
+        public async Task<UpdateEmployeeDto> UpdateEmployeeAsync(Guid companyId, Guid id, UpdateEmployeeDto input)
+        {
+            if (await _repositoryManager.Company.GetCompanyAsync(companyId, trackChanges: false) is null)
+            {
+                throw new NotFoundException(string.Format(CompanyEmployeesErrorCodes.CompanyNotFound, companyId));
+            }
+
+            var employee = await _repositoryManager.Employee.GetEmployeeById(companyId, id, trackChanges: true)
+                ?? throw new NotFoundException(string.Format(CompanyEmployeesErrorCodes.EmployeeNotFound, id));
+
+            _mapper.Map(input, employee);
+            await _repositoryManager.SaveAsync();
+
+            return input;
+        }
     }
 }

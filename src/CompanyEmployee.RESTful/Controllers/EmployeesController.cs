@@ -37,6 +37,13 @@ namespace CompanyEmployee.RESTful.Controllers
             return CreatedAtRoute(CompanyEmployeesConsts.EmployeeRoute, new { companyId, id = employeeDto.Id }, employeeDto);
         }
 
+        [HttpPut("{id:guid}")]
+        public async Task<IActionResult> UpdateEmployeeForCompanyAsync(Guid companyId, Guid id, [FromBody] UpdateEmployeeDto input)
+        {
+            await _serviceManager.EmployeeService.UpdateEmployeeAsync(companyId, id, input);
+            return NoContent();
+        }
+
         [HttpDelete("{id:guid}")]
         public async Task<IActionResult> DeleteEmployeeAsync(Guid companyId, Guid id)
         {

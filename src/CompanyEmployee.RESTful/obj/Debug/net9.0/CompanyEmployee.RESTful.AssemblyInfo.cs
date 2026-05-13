@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CompanyEmployee.RESTful")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+902002a7ac4ed6bc90112b03d1c352fb11828d77")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d68c467b82d816eae791ea936c5fedf49b37780")]
 [assembly: System.Reflection.AssemblyProductAttribute("CompanyEmployee.RESTful")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CompanyEmployee.RESTful")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
