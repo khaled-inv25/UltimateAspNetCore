@@ -55,5 +55,13 @@ namespace CompanyEmployee.RESTful.Controllers
 
             return CreatedAtRoute(CompanyEmployeesConsts.CompanyCollectionRoute, new { ids }, companies);
         }
+
+        [HttpDelete("{id:guid}")]
+        public async Task<IActionResult> DeleteCompanyAsync(Guid id)
+        {
+            await _serviceManager.CompanyService.DeleteAsync(id, false);
+
+            return NoContent();
+        }
     }
 }

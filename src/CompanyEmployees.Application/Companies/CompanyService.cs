@@ -10,10 +10,13 @@ namespace CompanyEmployees.Application.Companies
 {
     public class CompanyService : ICompanyService
     {
+        #region Props
         private readonly IRepositoryManager _repositoryManager;
         private readonly ILoggerManager _logger;
         private readonly IMapper _mapper;
+        #endregion
 
+        #region Ctor
         public CompanyService(
             IRepositoryManager repositoryManager,
             ILoggerManager logger,
@@ -23,7 +26,9 @@ namespace CompanyEmployees.Application.Companies
             _logger = logger;
             _mapper = mapper;
         }
+        #endregion
 
+        #region Methods
         public async Task<CompanyDto> CreateCompanyAsync(CreateCompanyDto input)
         {
             var company = _mapper.Map<Company>(input);
@@ -58,7 +63,7 @@ namespace CompanyEmployees.Application.Companies
 
         public async Task<IEnumerable<CompanyDto>> GetAllCompanies(bool trackChanges)
         {
-            var companies =  await _repositoryManager.Company.GetAllCompaniesAsync(trackChanges);
+            var companies = await _repositoryManager.Company.GetAllCompaniesAsync(trackChanges);
 
             return _mapper.Map<IEnumerable<CompanyDto>>(companies); ;
         }
@@ -88,5 +93,16 @@ namespace CompanyEmployees.Application.Companies
                 ? throw new NotFoundException(string.Format(CompanyEmployeesErrorCodes.CompanyNotFound, id))
                 : _mapper.Map<CompanyDto>(company);
         }
+
+        public async Task DeleteAsync(Guid id, bool trackChanges)
+        {
+            var company = await _repositoryManager.Company.GetCompanyAsync(id, trackChanges) ??
+                throw new NotFoundException(string.Format(CompanyEmployeesErrorCodes.CompanyNotFound, id)); ;
+
+            _repositoryManager.Company.Remove(company);
+
+            await _repositoryManager.SaveAsync();
+        }
+        #endregion
     }
 }

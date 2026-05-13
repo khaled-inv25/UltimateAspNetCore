@@ -124,6 +124,22 @@
   },
   {
     "ContainingType": "CompanyEmployee.RESTful.Controllers.CompaniesController",
+    "Method": "DeleteCompanyAsync",
+    "RelativePath": "api/companies/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompanyEmployee.RESTful.Controllers.CompaniesController",
     "Method": "CreateCollectionAsync",
     "RelativePath": "api/companies/collection",
     "HttpMethod": "POST",
