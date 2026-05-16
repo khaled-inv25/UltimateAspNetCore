@@ -8,7 +8,10 @@ namespace CompanyEmployees.EntityFramework
     {
         protected  CompanyEmployeeDbContext DbContext;
 
-        public RepositoryBase(CompanyEmployeeDbContext dbContext) => DbContext = dbContext;
+        public RepositoryBase(CompanyEmployeeDbContext dbContext)
+        {
+            DbContext = dbContext;
+        }
 
         public IQueryable<T> FindAll(bool trackChanges)
             => !trackChanges ? DbContext.Set<T>().AsNoTracking() : DbContext.Set<T>();

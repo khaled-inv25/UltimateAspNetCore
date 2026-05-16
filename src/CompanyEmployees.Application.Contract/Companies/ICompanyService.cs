@@ -7,6 +7,7 @@
         Task<CompanyDto> GetCompayByIdAsync(Guid id, bool trackChanges);
         Task<CompanyDto> CreateCompanyAsync(CreateCompanyDto input);
         Task<(IEnumerable<CompanyDto> companies, string ids)> CreateCompanyCollectionAsync(IEnumerable<CreateCompanyDto> input);
+        Task UpdateCompanyAsync(Guid id, UpdateCompanyDto input, bool trackChanges);
         Task DeleteAsync(Guid id, bool trackChanges);
     }
 }

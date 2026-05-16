@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r2PlkQ+HFQE=",
+  "dgSpecHash": "UzhGQ8DTwO4=",
   "success": true,
-  "projectFilePath": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Domain\\CompanyEmployees.Domain.csproj",
+  "projectFilePath": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Domain\\CompanyEmployees.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

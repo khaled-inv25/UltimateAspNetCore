@@ -56,6 +56,17 @@ namespace CompanyEmployee.RESTful.Controllers
             return CreatedAtRoute(CompanyEmployeesConsts.CompanyCollectionRoute, new { ids }, companies);
         }
 
+        [HttpPut("{id:guid}")]
+        public async Task<IActionResult> UpdateCompanyAsync(Guid id, [FromBody] UpdateCompanyDto input)
+        {
+            if (input is null)
+            {
+                return BadRequest(CompanyEmployeesErrorCodes.CreateCompanyObjectIsNull);
+            }
+            await _serviceManager.CompanyService.UpdateCompanyAsync(id, input, trackChanges: true);
+            return NoContent();
+        }
+
         [HttpDelete("{id:guid}")]
         public async Task<IActionResult> DeleteCompanyAsync(Guid id)
         {

@@ -25,6 +25,7 @@ namespace CompanyEmployees.Application.Companies
             _repositoryManager = repositoryManager;
             _logger = logger;
             _mapper = mapper;
+            _mapper = mapper;
         }
         #endregion
 
@@ -101,6 +102,15 @@ namespace CompanyEmployees.Application.Companies
 
             _repositoryManager.Company.Remove(company);
 
+            await _repositoryManager.SaveAsync();
+        }
+
+        public async Task UpdateCompanyAsync(Guid id, UpdateCompanyDto input, bool trackChanges)
+        {
+            var company = await _repositoryManager.Company.GetCompanyAsync(id, trackChanges) ??
+                throw new NotFoundException(string.Format(CompanyEmployeesErrorCodes.CompanyNotFound, id));
+
+            _mapper.Map(input, company);
             await _repositoryManager.SaveAsync();
         }
         #endregion

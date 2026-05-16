@@ -12,6 +12,7 @@ namespace CompanyEmployees.Application
         {
             CreateMap<Company, CompanyDto>();
             CreateMap<CreateCompanyDto, Company>();
+            CreateMap<UpdateCompanyDto, Company>();
 
             CreateMap<Employee, EmployeeDto>();
             CreateMap<CreateEmployeeDto, Employee>();
