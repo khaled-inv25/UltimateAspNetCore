@@ -2,6 +2,8 @@ using CompanyEmployees.Domain.Shared;
 using CompanyEmployees.WebApi;
 using CompanyEmployees.WebApi.Extensions;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Formatters;
+using Microsoft.Extensions.Options;
 using NLog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,9 +18,16 @@ builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.ConfigureAutoMapper();
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 
+NewtonsoftJsonPatchInputFormatter GetJsonPatchInputFormatter() =>
+    new ServiceCollection().AddLogging().AddMvc().AddNewtonsoftJson()
+    .Services.BuildServiceProvider()
+    .GetRequiredService<IOptions<MvcOptions>>().Value.InputFormatters
+    .OfType<NewtonsoftJsonPatchInputFormatter>().First();
+
 builder.Services.AddControllers(config =>
 {
     config.ReturnHttpNotAcceptable = true;
+    config.InputFormatters.Insert(0, GetJsonPatchInputFormatter());
 })
     .AddApplicationPart(typeof(CompanyEmployee.RESTful.AssemblyReference).Assembly);
 

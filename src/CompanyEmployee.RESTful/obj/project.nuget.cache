@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "+9XX/ihKng0=",
+  "dgSpecHash": "KsFcwXv8w/o=",
   "success": true,
-  "projectFilePath": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployee.RESTful\\CompanyEmployee.RESTful.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployee.RESTful\\CompanyEmployee.RESTful.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\9.0.15\\microsoft.aspnetcore.jsonpatch.9.0.15.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
