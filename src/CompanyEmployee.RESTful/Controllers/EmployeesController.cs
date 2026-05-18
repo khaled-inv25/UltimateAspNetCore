@@ -1,6 +1,7 @@
 ﻿using CompanyEmployees.Application.Contract;
 using CompanyEmployees.Application.Contract.Employees;
 using CompanyEmployees.Domain.Shared;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -22,7 +23,7 @@ namespace CompanyEmployee.RESTful.Controllers
         {
             return Ok(await _serviceManager.EmployeeService.GetEmployeesAsync(companyId));
         }
-        
+
         [HttpGet("{id:guid}", Name = CompanyEmployeesConsts.EmployeeRoute)]
         public async Task<IActionResult> GetEmplyeesForCompanyAsync(Guid companyId, Guid id)
         {
@@ -48,6 +49,15 @@ namespace CompanyEmployee.RESTful.Controllers
         public async Task<IActionResult> DeleteEmployeeAsync(Guid companyId, Guid id)
         {
             await _serviceManager.EmployeeService.DeleteAsync(companyId, id, false);
+
+            return NoContent();
+        }
+
+        [HttpPatch("{id:guid}")]
+        public async Task<IActionResult> ChangeEmpAgeAsync(Guid companyId, Guid id, 
+            [FromBody] JsonPatchDocument<UpdateEmployeeDto> jsonPatch)
+        {
+            await _serviceManager.EmployeeService.ChangeAgeAsync(companyId, id, jsonPatch.ApplyTo);
 
             return NoContent();
         }

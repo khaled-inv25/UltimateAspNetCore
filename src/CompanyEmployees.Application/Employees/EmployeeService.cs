@@ -99,5 +99,29 @@ namespace CompanyEmployees.Application.Employees
 
             await _repositoryManager.SaveAsync();
         }
+
+        public Task ChangeEmpAgeAsync(Guid companyId, Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task ChangeAgeAsync(Guid companyId, Guid id, ApplayPatchDelegate @delegate)
+        {
+            if (await _repositoryManager.Company.GetCompanyAsync(companyId, false) is null)
+            {
+                throw new NotFoundException(string.Format(CompanyEmployeesErrorCodes.CompanyNotFound, companyId));
+            }
+
+            var employee = await _repositoryManager.Employee.GetEmployeeById(companyId, id, true)
+                ?? throw new NotFoundException(string.Format(CompanyEmployeesErrorCodes.EmployeeNotFound, id));
+
+            var empToPatch = _mapper.Map<UpdateEmployeeDto>(employee);
+
+            @delegate(empToPatch);
+
+            _mapper.Map(empToPatch, employee);
+
+            await _repositoryManager.SaveAsync();
+        }
     }
 }

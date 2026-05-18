@@ -132,6 +132,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "CompanyEmployee.RESTful.Controllers.EmployeesController",
+    "Method": "ChangeEmpAgeAsync",
+    "RelativePath": "api/companies/{companyId}/employees/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "companyId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "jsonPatch",
+        "Type": "Microsoft.AspNetCore.JsonPatch.JsonPatchDocument\u00601[[CompanyEmployees.Application.Contract.Employees.UpdateEmployeeDto, CompanyEmployees.Application.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CompanyEmployee.RESTful.Controllers.CompaniesController",
     "Method": "GetCompanyByIdAsync",
     "RelativePath": "api/companies/{id}",

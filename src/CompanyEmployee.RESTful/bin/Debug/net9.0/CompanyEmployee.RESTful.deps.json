@@ -8,10 +8,32 @@
     ".NETCoreApp,Version=v9.0": {
       "CompanyEmployee.RESTful/1.0.0": {
         "dependencies": {
-          "CompanyEmployees.Application.Contract": "1.0.0"
+          "CompanyEmployees.Application.Contract": "1.0.0",
+          "Microsoft.AspNetCore.JsonPatch": "9.0.15"
         },
         "runtime": {
           "CompanyEmployee.RESTful.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.JsonPatch/9.0.15": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.JsonPatch.dll": {
+            "assemblyVersion": "9.0.15.0",
+            "fileVersion": "9.0.1526.17607"
+          }
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {},
+      "Newtonsoft.Json/13.0.3": {
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.3.27908"
+          }
         }
       },
       "CompanyEmployees.Application.Contract/1.0.0": {
@@ -40,6 +62,27 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.AspNetCore.JsonPatch/9.0.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tSsfNPpt0RlQkPWGAqp5rIFtOhHFq22uOq7jS+9cvdLY4QHWtte1RX2HyQChSu9/tFSbZ4T8dyB1LkWHcLe+IA==",
+      "path": "microsoft.aspnetcore.jsonpatch/9.0.15",
+      "hashPath": "microsoft.aspnetcore.jsonpatch.9.0.15.nupkg.sha512"
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "path": "newtonsoft.json/13.0.3",
+      "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
     },
     "CompanyEmployees.Application.Contract/1.0.0": {
       "type": "project",
