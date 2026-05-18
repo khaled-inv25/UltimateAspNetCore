@@ -100,11 +100,6 @@ namespace CompanyEmployees.Application.Employees
             await _repositoryManager.SaveAsync();
         }
 
-        public Task ChangeEmpAgeAsync(Guid companyId, Guid id)
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task ChangeAgeAsync(Guid companyId, Guid id, ApplayPatchDelegate @delegate)
         {
             if (await _repositoryManager.Company.GetCompanyAsync(companyId, false) is null)

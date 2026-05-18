@@ -72,9 +72,6 @@ D:\developer\ASP.NET\Core\UltimateAspNetCore\src\CompanyEmployee.RESTful\obj\Deb
 D:\developer\ASP.NET\Core\UltimateAspNetCore\src\CompanyEmployee.RESTful\obj\Debug\net9.0\CompanyEmployee.RESTful.AssemblyInfo.cs
 D:\developer\ASP.NET\Core\UltimateAspNetCore\src\CompanyEmployee.RESTful\obj\Debug\net9.0\CompanyEmployee.RESTful.csproj.CoreCompileInputs.cache
 D:\developer\ASP.NET\Core\UltimateAspNetCore\src\CompanyEmployee.RESTful\obj\Debug\net9.0\CompanyEmployee.RESTful.sourcelink.json
-D:\developer\ASP.NET\Core\UltimateAspNetCore\src\CompanyEmployee.RESTful\obj\Debug\net9.0\CompanyEmployee.RESTful.dll
-D:\developer\ASP.NET\Core\UltimateAspNetCore\src\CompanyEmployee.RESTful\obj\Debug\net9.0\refint\CompanyEmployee.RESTful.dll
-D:\developer\ASP.NET\Core\UltimateAspNetCore\src\CompanyEmployee.RESTful\obj\Debug\net9.0\CompanyEmployee.RESTful.pdb
 D:\developer\ASP.NET\Core\UltimateAspNetCore\src\CompanyEmployee.RESTful\bin\Debug\net9.0\CompanyEmployee.RESTful.deps.json
 D:\developer\ASP.NET\Core\UltimateAspNetCore\src\CompanyEmployee.RESTful\bin\Debug\net9.0\CompanyEmployee.RESTful.dll
 D:\developer\ASP.NET\Core\UltimateAspNetCore\src\CompanyEmployee.RESTful\bin\Debug\net9.0\CompanyEmployee.RESTful.pdb
@@ -83,4 +80,7 @@ D:\developer\ASP.NET\Core\UltimateAspNetCore\src\CompanyEmployee.RESTful\bin\Deb
 D:\developer\ASP.NET\Core\UltimateAspNetCore\src\CompanyEmployee.RESTful\bin\Debug\net9.0\CompanyEmployees.Application.Contract.pdb
 D:\developer\ASP.NET\Core\UltimateAspNetCore\src\CompanyEmployee.RESTful\bin\Debug\net9.0\CompanyEmployees.Domain.Shared.pdb
 D:\developer\ASP.NET\Core\UltimateAspNetCore\src\CompanyEmployee.RESTful\obj\Debug\net9.0\CompanyE.84EE6486.Up2Date
+D:\developer\ASP.NET\Core\UltimateAspNetCore\src\CompanyEmployee.RESTful\obj\Debug\net9.0\CompanyEmployee.RESTful.dll
+D:\developer\ASP.NET\Core\UltimateAspNetCore\src\CompanyEmployee.RESTful\obj\Debug\net9.0\refint\CompanyEmployee.RESTful.dll
+D:\developer\ASP.NET\Core\UltimateAspNetCore\src\CompanyEmployee.RESTful\obj\Debug\net9.0\CompanyEmployee.RESTful.pdb
 D:\developer\ASP.NET\Core\UltimateAspNetCore\src\CompanyEmployee.RESTful\obj\Debug\net9.0\ref\CompanyEmployee.RESTful.dll
