@@ -58,8 +58,7 @@
               "RelativeToolTip": "src\\CompanyEmployee.RESTful\\Controllers\\EmployeesController.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAYwDsAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T07:24:23.622Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T07:24:23.622Z"
             },
             {
               "$type": "Document",
@@ -69,7 +68,7 @@
               "RelativeDocumentMoniker": "src\\CompanyEmployees.Application.Contract\\Employees\\IEmployeeService.cs",
               "ToolTip": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application.Contract\\Employees\\IEmployeeService.cs",
               "RelativeToolTip": "src\\CompanyEmployees.Application.Contract\\Employees\\IEmployeeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-18T07:24:41.429Z",
               "EditorCaption": ""
@@ -82,7 +81,7 @@
               "RelativeDocumentMoniker": "src\\CompanyEmployees.Application\\Employees\\EmployeeService.cs",
               "ToolTip": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application\\Employees\\EmployeeService.cs",
               "RelativeToolTip": "src\\CompanyEmployees.Application\\Employees\\EmployeeService.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAowHoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwAYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-18T07:50:26.349Z",
               "EditorCaption": ""
@@ -97,8 +96,7 @@
               "RelativeToolTip": "src\\CompanyEmployees.WebApi\\Program.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAvwCEAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T07:12:20.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T07:12:20.169Z"
             }
           ]
         }
