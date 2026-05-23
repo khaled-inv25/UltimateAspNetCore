@@ -33,6 +33,11 @@ namespace CompanyEmployee.RESTful.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateEmployeeForCompanyAsync(Guid companyId, [FromBody] CreateEmployeeDto input)
         {
+            if (!ModelState.IsValid)
+            {
+                return UnprocessableEntity(ModelState);
+            }
+
             var employeeDto = await _serviceManager.EmployeeService.CreateEmployeeAsync(companyId, input);
 
             return CreatedAtRoute(CompanyEmployeesConsts.EmployeeRoute, new { companyId, id = employeeDto.Id }, employeeDto);

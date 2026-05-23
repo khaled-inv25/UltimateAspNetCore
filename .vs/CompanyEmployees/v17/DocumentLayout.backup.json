@@ -3,31 +3,7 @@
   "WorkspaceRootPath": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{9D40E011-81D5-48B1-90F0-76F1D96FB9D2}|src\\CompanyEmployees.WebApi\\CompanyEmployees.WebApi.csproj|d:\\developer\\asp.net\\core\\ultimateaspnetcore\\src\\companyemployees.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D40E011-81D5-48B1-90F0-76F1D96FB9D2}|src\\CompanyEmployees.WebApi\\CompanyEmployees.WebApi.csproj|solutionrelative:src\\companyemployees.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02566535-C921-4B97-AA06-52384C7BD886}|src\\CompanyEmployee.RESTful\\CompanyEmployee.RESTful.csproj|d:\\developer\\asp.net\\core\\ultimateaspnetcore\\src\\companyemployee.restful\\controllers\\companiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02566535-C921-4B97-AA06-52384C7BD886}|src\\CompanyEmployee.RESTful\\CompanyEmployee.RESTful.csproj|solutionrelative:src\\companyemployee.restful\\controllers\\companiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02566535-C921-4B97-AA06-52384C7BD886}|src\\CompanyEmployee.RESTful\\CompanyEmployee.RESTful.csproj|d:\\developer\\asp.net\\core\\ultimateaspnetcore\\src\\companyemployee.restful\\modelbinders\\arraymodelbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02566535-C921-4B97-AA06-52384C7BD886}|src\\CompanyEmployee.RESTful\\CompanyEmployee.RESTful.csproj|solutionrelative:src\\companyemployee.restful\\modelbinders\\arraymodelbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EEBB073C-7375-4602-B2E7-AAA65C095DB7}|src\\CompanyEmployees.Application\\CompanyEmployees.Application.csproj|d:\\developer\\asp.net\\core\\ultimateaspnetcore\\src\\companyemployees.application\\employees\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EEBB073C-7375-4602-B2E7-AAA65C095DB7}|src\\CompanyEmployees.Application\\CompanyEmployees.Application.csproj|solutionrelative:src\\companyemployees.application\\employees\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F2DC84F-0C1C-4762-BC66-3D29CF0F8A9A}|src\\CompanyEmployees.Application.Contract\\CompanyEmployees.Application.Contract.csproj|d:\\developer\\asp.net\\core\\ultimateaspnetcore\\src\\companyemployees.application.contract\\employees\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F2DC84F-0C1C-4762-BC66-3D29CF0F8A9A}|src\\CompanyEmployees.Application.Contract\\CompanyEmployees.Application.Contract.csproj|solutionrelative:src\\companyemployees.application.contract\\employees\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02566535-C921-4B97-AA06-52384C7BD886}|src\\CompanyEmployee.RESTful\\CompanyEmployee.RESTful.csproj|d:\\developer\\asp.net\\core\\ultimateaspnetcore\\src\\companyemployee.restful\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-=======
       "AbsoluteMoniker": "D:0:0:{02566535-C921-4B97-AA06-52384C7BD886}|src\\CompanyEmployee.RESTful\\CompanyEmployee.RESTful.csproj|d:\\developer\\aspnet\\projects\\core\\ultimateaspnetcore\\src\\companyemployee.restful\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
->>>>>>> 1f972bb3df4c1b0a35ab95b0719324756cdd66c5
       "RelativeMoniker": "D:0:0:{02566535-C921-4B97-AA06-52384C7BD886}|src\\CompanyEmployee.RESTful\\CompanyEmployee.RESTful.csproj|solutionrelative:src\\companyemployee.restful\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -37,13 +13,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-<<<<<<< HEAD
-          "DockedWidth": 317,
-          "SelectedChildIndex": 10,
-=======
           "DockedWidth": 568,
           "SelectedChildIndex": 5,
->>>>>>> 1f972bb3df4c1b0a35ab95b0719324756cdd66c5
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,81 +33,6 @@
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
-<<<<<<< HEAD
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CompaniesController.cs",
-              "DocumentMoniker": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployee.RESTful\\Controllers\\CompaniesController.cs",
-              "RelativeDocumentMoniker": "src\\CompanyEmployee.RESTful\\Controllers\\CompaniesController.cs",
-              "ToolTip": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployee.RESTful\\Controllers\\CompaniesController.cs",
-              "RelativeToolTip": "src\\CompanyEmployee.RESTful\\Controllers\\CompaniesController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T06:00:34.724Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ArrayModelBinder.cs",
-              "DocumentMoniker": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployee.RESTful\\ModelBinders\\ArrayModelBinder.cs",
-              "RelativeDocumentMoniker": "src\\CompanyEmployee.RESTful\\ModelBinders\\ArrayModelBinder.cs",
-              "ToolTip": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployee.RESTful\\ModelBinders\\ArrayModelBinder.cs",
-              "RelativeToolTip": "src\\CompanyEmployee.RESTful\\ModelBinders\\ArrayModelBinder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T06:00:15.24Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EmployeesController.cs",
-              "DocumentMoniker": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployee.RESTful\\Controllers\\EmployeesController.cs",
-              "RelativeDocumentMoniker": "src\\CompanyEmployee.RESTful\\Controllers\\EmployeesController.cs",
-              "ToolTip": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployee.RESTful\\Controllers\\EmployeesController.cs",
-              "RelativeToolTip": "src\\CompanyEmployee.RESTful\\Controllers\\EmployeesController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwDsAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T07:24:23.622Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IEmployeeService.cs",
-              "DocumentMoniker": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application.Contract\\Employees\\IEmployeeService.cs",
-              "RelativeDocumentMoniker": "src\\CompanyEmployees.Application.Contract\\Employees\\IEmployeeService.cs",
-              "ToolTip": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application.Contract\\Employees\\IEmployeeService.cs",
-              "RelativeToolTip": "src\\CompanyEmployees.Application.Contract\\Employees\\IEmployeeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T07:24:41.429Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EmployeeService.cs",
-              "DocumentMoniker": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application\\Employees\\EmployeeService.cs",
-              "RelativeDocumentMoniker": "src\\CompanyEmployees.Application\\Employees\\EmployeeService.cs",
-              "ToolTip": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application\\Employees\\EmployeeService.cs",
-              "RelativeToolTip": "src\\CompanyEmployees.Application\\Employees\\EmployeeService.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwAYAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T07:50:26.349Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.WebApi\\Program.cs",
-              "RelativeDocumentMoniker": "src\\CompanyEmployees.WebApi\\Program.cs",
-              "ToolTip": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.WebApi\\Program.cs",
-              "RelativeToolTip": "src\\CompanyEmployees.WebApi\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAvwCAAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T07:12:20.169Z",
-=======
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
@@ -148,10 +44,9 @@
               "RelativeDocumentMoniker": "src\\CompanyEmployee.RESTful\\Controllers\\EmployeesController.cs",
               "ToolTip": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployee.RESTful\\Controllers\\EmployeesController.cs",
               "RelativeToolTip": "src\\CompanyEmployee.RESTful\\Controllers\\EmployeesController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAA1wDUAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCUAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T07:24:23.622Z",
->>>>>>> 1f972bb3df4c1b0a35ab95b0719324756cdd66c5
+              "WhenOpened": "2026-05-23T07:28:41.641Z",
               "EditorCaption": ""
             }
           ]
