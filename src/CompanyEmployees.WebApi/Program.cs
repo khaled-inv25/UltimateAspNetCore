@@ -1,3 +1,4 @@
+using CompanyEmployee.RESTful.ActionFilters;
 using CompanyEmployees.Domain.Shared;
 using CompanyEmployees.WebApi;
 using CompanyEmployees.WebApi.Extensions;
@@ -5,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Extensions.Options;
 using NLog;
+using System.ComponentModel.DataAnnotations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +19,7 @@ builder.Services.ConfigureServicesManager();
 builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.ConfigureAutoMapper();
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+builder.Services.AddScoped<ValidationFilterAttribute>();
 
 NewtonsoftJsonPatchInputFormatter GetJsonPatchInputFormatter() =>
     new ServiceCollection()

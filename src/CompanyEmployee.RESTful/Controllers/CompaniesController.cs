@@ -1,4 +1,5 @@
-﻿using CompanyEmployee.RESTful.ModelBinders;
+﻿using CompanyEmployee.RESTful.ActionFilters;
+using CompanyEmployee.RESTful.ModelBinders;
 using CompanyEmployees.Application.Contract;
 using CompanyEmployees.Application.Contract.Companies;
 using CompanyEmployees.Domain.Shared;
@@ -8,15 +9,21 @@ namespace CompanyEmployee.RESTful.Controllers
 {
     [Route("api/companies")]
     [ApiController]
+    [ServiceFilter(typeof(ValidationFilterAttribute))]
     public class CompaniesController : ControllerBase
     {
+        #region fields
         private readonly IServiceManager _serviceManager;
+        #endregion
 
+        #region ctor
         public CompaniesController(IServiceManager serviceManager)
         {
             _serviceManager = serviceManager;
         }
+        #endregion
 
+        #region GET
         [HttpGet]
         public async Task<IActionResult> GetAllCompanies()
         {
@@ -34,15 +41,12 @@ namespace CompanyEmployee.RESTful.Controllers
         {
             return Ok(await _serviceManager.CompanyService.GetByIdsAsync(ids, trackChanges: false));
         }
+        #endregion
 
+        #region POST
         [HttpPost]
         public async Task<IActionResult> CreateCompanyAsync([FromBody] CreateCompanyDto input)
         {
-            if (input is null)
-            {
-                return BadRequest(CompanyEmployeesErrorCodes.CreateCompanyObjectIsNull);
-            }
-
             var createdCompany = await _serviceManager.CompanyService.CreateCompanyAsync(input);
 
             return CreatedAtRoute(CompanyEmployeesConsts.CompanyRoute, new { id = createdCompany.Id }, createdCompany);
@@ -55,18 +59,18 @@ namespace CompanyEmployee.RESTful.Controllers
 
             return CreatedAtRoute(CompanyEmployeesConsts.CompanyCollectionRoute, new { ids }, companies);
         }
+        #endregion
 
+        #region PUT
         [HttpPut("{id:guid}")]
         public async Task<IActionResult> UpdateCompanyAsync(Guid id, [FromBody] UpdateCompanyDto input)
         {
-            if (input is null)
-            {
-                return BadRequest(CompanyEmployeesErrorCodes.CreateCompanyObjectIsNull);
-            }
             await _serviceManager.CompanyService.UpdateCompanyAsync(id, input, trackChanges: true);
             return NoContent();
         }
+        #endregion
 
+        #region DELETE
         [HttpDelete("{id:guid}")]
         public async Task<IActionResult> DeleteCompanyAsync(Guid id)
         {
@@ -74,5 +78,6 @@ namespace CompanyEmployee.RESTful.Controllers
 
             return NoContent();
         }
+        #endregion
     }
 }

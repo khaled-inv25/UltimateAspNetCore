@@ -10,13 +10,13 @@ namespace CompanyEmployees.Application.Companies
 {
     public class CompanyService : ICompanyService
     {
-        #region Props
+        #region fields
         private readonly IRepositoryManager _repositoryManager;
         private readonly ILoggerManager _logger;
         private readonly IMapper _mapper;
         #endregion
 
-        #region Ctor
+        #region ctor
         public CompanyService(
             IRepositoryManager repositoryManager,
             ILoggerManager logger,
@@ -88,30 +88,34 @@ namespace CompanyEmployees.Application.Companies
 
         public async Task<CompanyDto> GetCompayByIdAsync(Guid id, bool trackChanges)
         {
-            var company = await _repositoryManager.Company.GetCompanyAsync(id, trackChanges);
+            var company = await GetCompanyAsync(id, trackChanges);
 
-            return company == null
-                ? throw new NotFoundException(string.Format(CompanyEmployeesErrorCodes.CompanyNotFound, id))
-                : _mapper.Map<CompanyDto>(company);
+            return _mapper.Map<CompanyDto>(company);
+        }
+
+        public async Task UpdateCompanyAsync(Guid id, UpdateCompanyDto input, bool trackChanges)
+        {
+            var company = await GetCompanyAsync(id, trackChanges);
+
+            _mapper.Map(input, company);
+            await _repositoryManager.SaveAsync();
         }
 
         public async Task DeleteAsync(Guid id, bool trackChanges)
         {
-            var company = await _repositoryManager.Company.GetCompanyAsync(id, trackChanges) ??
-                throw new NotFoundException(string.Format(CompanyEmployeesErrorCodes.CompanyNotFound, id)); ;
+            var company = await GetCompanyAsync(id, trackChanges);
 
             _repositoryManager.Company.Remove(company);
 
             await _repositoryManager.SaveAsync();
         }
+        #endregion
 
-        public async Task UpdateCompanyAsync(Guid id, UpdateCompanyDto input, bool trackChanges)
+        #region helpers
+        private async Task<Company> GetCompanyAsync(Guid id, bool trackChanges = false)
         {
-            var company = await _repositoryManager.Company.GetCompanyAsync(id, trackChanges) ??
+            return await _repositoryManager.Company.GetCompanyAsync(id, trackChanges) ??
                 throw new NotFoundException(string.Format(CompanyEmployeesErrorCodes.CompanyNotFound, id));
-
-            _mapper.Map(input, company);
-            await _repositoryManager.SaveAsync();
         }
         #endregion
     }
