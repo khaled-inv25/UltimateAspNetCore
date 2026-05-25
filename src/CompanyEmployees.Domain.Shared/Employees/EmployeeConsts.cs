@@ -3,6 +3,6 @@
     public static class EmployeeConsts
     {
         public const int MaxNameLength = 60;
-        public const int MaxPositionLength = 20;
+        public const int MaxPositionLength = 60;
     }
 }

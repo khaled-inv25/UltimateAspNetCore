@@ -7,5 +7,6 @@
         public const string CompanyRoute = "CompanyById";
         public const string CompanyCollectionRoute = "CompanyCollection";
         public const string EmployeeRoute = "GetEmployeeById";
+        public const string PaginationHeader = "X-Pagination";
     }
 }

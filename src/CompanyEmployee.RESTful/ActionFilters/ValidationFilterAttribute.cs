@@ -1,4 +1,5 @@
-﻿using CompanyEmployees.Domain.Shared;
+﻿using CompanyEmployee.RESTful.RequestAttributes;
+using CompanyEmployees.Domain.Shared;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
@@ -12,6 +13,12 @@ namespace CompanyEmployee.RESTful.ActionFilters
             var controller = context.RouteData.Values["controller"];
             
             var param = context.ActionArguments.SingleOrDefault(p => p.Value.ToString().Contains("Dto")).Value;
+
+            var skipValidation = context.ActionDescriptor.EndpointMetadata
+                .Any(x => x is SkipRequestDtoValidationAttribute);
+
+            if (skipValidation)
+                return;
 
             if (param is null)
             {

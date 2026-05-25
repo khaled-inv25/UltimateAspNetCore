@@ -17,9 +17,10 @@ namespace CompanyEmployees.WebApi.Extensions
             {
                 options.AddPolicy(CompanyEmployeesConsts.CorsPolicy, builder =>
                 {
-                    builder.AllowAnyOrigin();
-                    builder.AllowAnyMethod();
-                    builder.AllowAnyHeader();
+                    builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .WithExposedHeaders(CompanyEmployeesConsts.PaginationHeader);
                 });
             });
         }

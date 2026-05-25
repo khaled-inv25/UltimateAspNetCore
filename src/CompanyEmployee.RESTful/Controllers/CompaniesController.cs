@@ -1,5 +1,4 @@
-﻿using CompanyEmployee.RESTful.ActionFilters;
-using CompanyEmployee.RESTful.ModelBinders;
+﻿using CompanyEmployee.RESTful.ModelBinders;
 using CompanyEmployees.Application.Contract;
 using CompanyEmployees.Application.Contract.Companies;
 using CompanyEmployees.Domain.Shared;
@@ -9,17 +8,12 @@ namespace CompanyEmployee.RESTful.Controllers
 {
     [Route("api/companies")]
     [ApiController]
-    [ServiceFilter(typeof(ValidationFilterAttribute))]
-    public class CompaniesController : ControllerBase
+    public class CompaniesController : BaseController
     {
-        #region fields
-        private readonly IServiceManager _serviceManager;
-        #endregion
-
         #region ctor
         public CompaniesController(IServiceManager serviceManager)
+            : base(serviceManager)
         {
-            _serviceManager = serviceManager;
         }
         #endregion
 

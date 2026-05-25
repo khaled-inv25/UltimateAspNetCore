@@ -3,6 +3,7 @@ using CompanyEmployees.Application.Contract.Companies;
 using CompanyEmployees.Application.Contract.Employees;
 using CompanyEmployees.Domain.Companies;
 using CompanyEmployees.Domain.Employees;
+using CompanyEmployees.Domain.Shared.RequestFeatures;
 
 namespace CompanyEmployees.Application
 {

@@ -5,15 +5,19 @@ using CompanyEmployees.Domain;
 using CompanyEmployees.Domain.Employees;
 using CompanyEmployees.Domain.Exceptions;
 using CompanyEmployees.Domain.Shared;
+using CompanyEmployees.Domain.Shared.RequestFeatures;
 
 namespace CompanyEmployees.Application.Employees
 {
     public class EmployeeService : IEmployeeService
     {
+        #region fielsa
         private readonly IRepositoryManager _repositoryManager;
         private readonly ILoggerManager _logger;
         private readonly IMapper _mapper;
+        #endregion
 
+        #region ctor
         public EmployeeService(
             IRepositoryManager repositoryManager,
             ILoggerManager logger,
@@ -23,6 +27,7 @@ namespace CompanyEmployees.Application.Employees
             _logger = logger;
             _mapper = mapper;
         }
+        #endregion
 
         public async Task<EmployeeDto> CreateEmployeeAsync(Guid companyId, CreateEmployeeDto input)
         {
@@ -41,10 +46,7 @@ namespace CompanyEmployees.Application.Employees
 
         public async Task<EmployeeDto> GetEmployeeByIdAsync(Guid companyId, Guid id, bool trackChanges = false)
         {
-            if (await _repositoryManager.Company.GetCompanyAsync(companyId, trackChanges) is null)
-            {
-                throw new NotFoundException(string.Format(CompanyEmployeesErrorCodes.CompanyNotFound, companyId));
-            }
+            await CheckCompanyExistence(companyId, trackChanges);
 
             var employee = await _repositoryManager.Employee.GetEmployeeById(companyId, id, trackChanges);
 
@@ -56,17 +58,27 @@ namespace CompanyEmployees.Application.Employees
             return _mapper.Map<EmployeeDto>(employee);
         }
 
-        public async Task<IEnumerable<EmployeeDto>> GetEmployeesAsync(Guid companyId, bool trackChanges = false)
+        public async Task<IEnumerable<EmployeeDto>> GetEmployeesAsync(Guid companyId, EmployeeParameters param, bool trackChanges = false)
         {
+            await CheckCompanyExistence(companyId, trackChanges);
 
-            if (await _repositoryManager.Company.GetCompanyAsync(companyId, trackChanges) is null)
-            {
-                throw new NotFoundException(string.Format(CompanyEmployeesErrorCodes.CompanyNotFound, companyId));
-            }
-
-            var employees = await _repositoryManager.Employee.GetEmployeesAsync(companyId, trackChanges);
+            var employees = await _repositoryManager.Employee.GetEmployeesAsync(companyId, trackChanges, param);
 
             return _mapper.Map<IEnumerable<EmployeeDto>>(employees);
+        }
+
+        public async Task<PagedList<EmployeeDto>> GetEmployeePagedListAsync(Guid companyId, EmployeeParameters param, bool trackChanges = false)
+        {
+            await CheckCompanyExistence(companyId, trackChanges);
+
+            var employeePagedList = await _repositoryManager.Employee.GetEmployeePagedListAsync(companyId, trackChanges, param);
+
+            var employeeDtos = _mapper.Map<List<EmployeeDto>>(employeePagedList.ToList());
+
+            var pagedListDto = PagedList<EmployeeDto>
+                .ToPagedList(employeeDtos, employeePagedList.MetaData.TotalCount, param.PageNumber, param.PageSize);
+
+            return pagedListDto;
         }
 
         public async Task<UpdateEmployeeDto> UpdateEmployeeAsync(Guid companyId, Guid id, UpdateEmployeeDto input)
@@ -118,5 +130,16 @@ namespace CompanyEmployees.Application.Employees
 
             await _repositoryManager.SaveAsync();
         }
+
+        #region helpers
+        public async Task CheckCompanyExistence(Guid id, bool trackChanges)
+        {
+            if (await _repositoryManager.Company.GetCompanyAsync(id, trackChanges) is null)
+            {
+                throw new NotFoundException(string.Format(CompanyEmployeesErrorCodes.CompanyNotFound, id));
+            }
+
+        }
+        #endregion
     }
 }
