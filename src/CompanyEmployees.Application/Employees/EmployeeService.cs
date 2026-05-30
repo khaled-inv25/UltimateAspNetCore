@@ -60,6 +60,11 @@ namespace CompanyEmployees.Application.Employees
 
         public async Task<IEnumerable<EmployeeDto>> GetEmployeesAsync(Guid companyId, EmployeeParameters param, bool trackChanges = false)
         {
+            if (!param.IsValideAge)
+            {
+                throw new BadRequestException(CompanyEmployeesErrorCodes.NotValidAgeRange);
+            }
+
             await CheckCompanyExistence(companyId, trackChanges);
 
             var employees = await _repositoryManager.Employee.GetEmployeesAsync(companyId, trackChanges, param);
@@ -69,6 +74,11 @@ namespace CompanyEmployees.Application.Employees
 
         public async Task<PagedList<EmployeeDto>> GetEmployeePagedListAsync(Guid companyId, EmployeeParameters param, bool trackChanges = false)
         {
+            if (!param.IsValideAge)
+            {
+                throw new BadRequestException(CompanyEmployeesErrorCodes.NotValidAgeRange);
+            }
+
             await CheckCompanyExistence(companyId, trackChanges);
 
             var employeePagedList = await _repositoryManager.Employee.GetEmployeePagedListAsync(companyId, trackChanges, param);

@@ -1,5 +1,6 @@
 ﻿using CompanyEmployees.Domain.Employees;
 using CompanyEmployees.Domain.Shared.RequestFeatures;
+using CompanyEmployees.EntityFramework.Extensions;
 using Microsoft.EntityFrameworkCore;
 
 namespace CompanyEmployees.EntityFramework.Employees
@@ -21,7 +22,8 @@ namespace CompanyEmployees.EntityFramework.Employees
             .FirstOrDefaultAsync();
 
         public async Task<IEnumerable<Employee>> GetEmployeesAsync(Guid companyId, bool trackChanges, EmployeeParameters param)
-            => await FindByCondition(e => e.CompanyId.Equals(companyId), trackChanges)
+            => await FindByCondition(e =>
+            e.CompanyId.Equals(companyId), trackChanges)
             .OrderBy(e => e.Name)
             .Skip(param.Skip)
             .Take(param.PageSize)
@@ -29,8 +31,11 @@ namespace CompanyEmployees.EntityFramework.Employees
 
         public async Task<PagedList<Employee>> GetEmployeePagedListAsync(Guid companyId, bool trackChanges, EmployeeParameters param)
         {
-            var pagedResult = await FindByCondition(e => e.CompanyId.Equals(companyId), trackChanges)
-                .OrderBy(e => e.Name)
+            var pagedResult = await FindByCondition(e =>
+            e.CompanyId.Equals(companyId), trackChanges)
+                .Filter(param.MinAge, param.MaxAge)
+                .Search(param.SearchTerm)
+                .Sort(param.OrderBy)
                 .Skip(param.Skip)
                 .Take(param.PageSize)
                 .ToListAsync();

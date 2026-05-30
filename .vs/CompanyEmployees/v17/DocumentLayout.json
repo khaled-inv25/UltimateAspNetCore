@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{02566535-C921-4B97-AA06-52384C7BD886}|src\\CompanyEmployee.RESTful\\CompanyEmployee.RESTful.csproj|d:\\developer\\aspnet\\projects\\core\\ultimateaspnetcore\\src\\companyemployee.restful\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02566535-C921-4B97-AA06-52384C7BD886}|src\\CompanyEmployee.RESTful\\CompanyEmployee.RESTful.csproj|solutionrelative:src\\companyemployee.restful\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55505320-EFBB-4DAD-A5F3-B0A50912C0A8}|src\\CompanyEmployees.Domain\\CompanyEmployees.Domain.csproj|d:\\developer\\aspnet\\projects\\core\\ultimateaspnetcore\\src\\companyemployees.domain\\employees\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55505320-EFBB-4DAD-A5F3-B0A50912C0A8}|src\\CompanyEmployees.Domain\\CompanyEmployees.Domain.csproj|solutionrelative:src\\companyemployees.domain\\employees\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EEBB073C-7375-4602-B2E7-AAA65C095DB7}|src\\CompanyEmployees.Application\\CompanyEmployees.Application.csproj|d:\\developer\\aspnet\\projects\\core\\ultimateaspnetcore\\src\\companyemployees.application\\employees\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EEBB073C-7375-4602-B2E7-AAA65C095DB7}|src\\CompanyEmployees.Application\\CompanyEmployees.Application.csproj|solutionrelative:src\\companyemployees.application\\employees\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E6C8AFF-0EC0-4BF1-B3A8-5A8E0CEE3806}|src\\CompanyEmployees.EntityFramework\\CompanyEmployees.EntityFramework.csproj|d:\\developer\\aspnet\\projects\\core\\ultimateaspnetcore\\src\\companyemployees.entityframework\\employees\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E6C8AFF-0EC0-4BF1-B3A8-5A8E0CEE3806}|src\\CompanyEmployees.EntityFramework\\CompanyEmployees.EntityFramework.csproj|solutionrelative:src\\companyemployees.entityframework\\employees\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F2DC84F-0C1C-4762-BC66-3D29CF0F8A9A}|src\\CompanyEmployees.Application.Contract\\CompanyEmployees.Application.Contract.csproj|d:\\developer\\aspnet\\projects\\core\\ultimateaspnetcore\\src\\companyemployees.application.contract\\employees\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F2DC84F-0C1C-4762-BC66-3D29CF0F8A9A}|src\\CompanyEmployees.Application.Contract\\CompanyEmployees.Application.Contract.csproj|solutionrelative:src\\companyemployees.application.contract\\employees\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E6C8AFF-0EC0-4BF1-B3A8-5A8E0CEE3806}|src\\CompanyEmployees.EntityFramework\\CompanyEmployees.EntityFramework.csproj|d:\\developer\\aspnet\\projects\\core\\ultimateaspnetcore\\src\\companyemployees.entityframework\\extensions\\utility\\orderbyquerybuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E6C8AFF-0EC0-4BF1-B3A8-5A8E0CEE3806}|src\\CompanyEmployees.EntityFramework\\CompanyEmployees.EntityFramework.csproj|solutionrelative:src\\companyemployees.entityframework\\extensions\\utility\\orderbyquerybuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,66 +39,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EmployeesController.cs",
-              "DocumentMoniker": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployee.RESTful\\Controllers\\EmployeesController.cs",
-              "RelativeDocumentMoniker": "src\\CompanyEmployee.RESTful\\Controllers\\EmployeesController.cs",
-              "ToolTip": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployee.RESTful\\Controllers\\EmployeesController.cs",
-              "RelativeToolTip": "src\\CompanyEmployee.RESTful\\Controllers\\EmployeesController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACUAAABJAAAAAAAAAA==",
+              "Title": "OrderByQueryBuilder.cs",
+              "DocumentMoniker": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.EntityFramework\\Extensions\\Utility\\OrderByQueryBuilder.cs",
+              "RelativeDocumentMoniker": "src\\CompanyEmployees.EntityFramework\\Extensions\\Utility\\OrderByQueryBuilder.cs",
+              "ToolTip": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.EntityFramework\\Extensions\\Utility\\OrderByQueryBuilder.cs",
+              "RelativeToolTip": "src\\CompanyEmployees.EntityFramework\\Extensions\\Utility\\OrderByQueryBuilder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T20:04:45.786Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IEmployeeService.cs",
-              "DocumentMoniker": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application.Contract\\Employees\\IEmployeeService.cs",
-              "RelativeDocumentMoniker": "src\\CompanyEmployees.Application.Contract\\Employees\\IEmployeeService.cs",
-              "ToolTip": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application.Contract\\Employees\\IEmployeeService.cs",
-              "RelativeToolTip": "src\\CompanyEmployees.Application.Contract\\Employees\\IEmployeeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T20:04:42.026Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EmployeeService.cs",
-              "DocumentMoniker": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application\\Employees\\EmployeeService.cs",
-              "RelativeDocumentMoniker": "src\\CompanyEmployees.Application\\Employees\\EmployeeService.cs",
-              "ToolTip": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application\\Employees\\EmployeeService.cs",
-              "RelativeToolTip": "src\\CompanyEmployees.Application\\Employees\\EmployeeService.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAA1wEUAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T20:04:29.022Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EmployeeRepository.cs",
-              "DocumentMoniker": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.EntityFramework\\Employees\\EmployeeRepository.cs",
-              "RelativeDocumentMoniker": "src\\CompanyEmployees.EntityFramework\\Employees\\EmployeeRepository.cs",
-              "ToolTip": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.EntityFramework\\Employees\\EmployeeRepository.cs",
-              "RelativeToolTip": "src\\CompanyEmployees.EntityFramework\\Employees\\EmployeeRepository.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAkwCcAAABpAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T20:01:10.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IEmployeeRepository.cs",
-              "DocumentMoniker": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Domain\\Employees\\IEmployeeRepository.cs",
-              "RelativeDocumentMoniker": "src\\CompanyEmployees.Domain\\Employees\\IEmployeeRepository.cs",
-              "ToolTip": "D:\\Developer\\AspNet\\Projects\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Domain\\Employees\\IEmployeeRepository.cs",
-              "RelativeToolTip": "src\\CompanyEmployees.Domain\\Employees\\IEmployeeRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T20:01:47.745Z",
+              "WhenOpened": "2026-05-29T18:04:47.082Z",
               "EditorCaption": ""
             }
           ]

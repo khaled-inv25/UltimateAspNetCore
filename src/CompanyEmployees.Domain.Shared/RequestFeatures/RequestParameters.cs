@@ -27,5 +27,7 @@
                 return (PageNumber - 1) * _pageSize; 
             }
         }
+
+        public string? OrderBy { get; set; }
     }
 }

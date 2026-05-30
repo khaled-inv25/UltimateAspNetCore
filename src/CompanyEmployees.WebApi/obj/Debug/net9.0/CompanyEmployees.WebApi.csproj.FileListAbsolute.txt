@@ -908,3 +908,4 @@ D:\developer\ASP.NET\Core\UltimateAspNetCore\src\CompanyEmployees.WebApi\obj\Deb
 D:\developer\ASP.NET\Core\UltimateAspNetCore\src\CompanyEmployees.WebApi\obj\Debug\net9.0\CompanyEmployees.WebApi.pdb
 D:\developer\ASP.NET\Core\UltimateAspNetCore\src\CompanyEmployees.WebApi\obj\Debug\net9.0\CompanyEmployees.WebApi.genruntimeconfig.cache
 D:\developer\ASP.NET\Core\UltimateAspNetCore\src\CompanyEmployees.WebApi\obj\Debug\net9.0\ref\CompanyEmployees.WebApi.dll
+D:\Developer\AspNet\Projects\Core\UltimateAspNetCore\src\CompanyEmployees.WebApi\bin\Debug\net9.0\System.Linq.Dynamic.Core.dll
