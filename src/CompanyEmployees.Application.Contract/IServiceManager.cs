@@ -1,4 +1,5 @@
-﻿using CompanyEmployees.Application.Contract.Companies;
+﻿using CompanyEmployees.Application.Contract.Authentication;
+using CompanyEmployees.Application.Contract.Companies;
 using CompanyEmployees.Application.Contract.Employees;
 
 namespace CompanyEmployees.Application.Contract
@@ -7,6 +8,7 @@ namespace CompanyEmployees.Application.Contract
     {
         public ICompanyService CompanyService { get; }
         public IEmployeeService EmployeeService { get; }
+        public IAuthenticationService AuthService { get; }
 
     }
 }

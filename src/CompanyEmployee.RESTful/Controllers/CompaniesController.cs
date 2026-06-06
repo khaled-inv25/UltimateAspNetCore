@@ -1,8 +1,10 @@
 ﻿using CompanyEmployee.RESTful.ModelBinders;
+using CompanyEmployee.RESTful.RequestAttributes;
 using CompanyEmployees.Application.Contract;
 using CompanyEmployees.Application.Contract.Companies;
 using CompanyEmployees.Domain.Shared;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OutputCaching;
 
 namespace CompanyEmployee.RESTful.Controllers
 {
@@ -25,8 +27,10 @@ namespace CompanyEmployee.RESTful.Controllers
         }
 
         [HttpGet("{id:guid}", Name = CompanyEmployeesConsts.CompanyRoute)]
+        //[ResponseCache(CacheProfileName = CompanyEmployeesConsts.Cach120SecondsDuration)]
+        [OutputCache(PolicyName = CompanyEmployeesConsts.Cach120SecondsDuration)]
         public async Task<IActionResult> GetCompanyByIdAsync(Guid id)
-        {
+         {
             return Ok(await _serviceManager.CompanyService.GetCompayByIdAsync(id, trackChanges: false));
         }
 
@@ -73,5 +77,14 @@ namespace CompanyEmployee.RESTful.Controllers
             return NoContent();
         }
         #endregion
+
+        [HttpOptions]
+        [SkipRequestDtoValidation]
+        public IActionResult GetCompaniesOptions()
+        {
+            Response.Headers.Add("Allow", "GET, OPTIONS, POST, PUT, DELETE");
+
+            return Ok();
+        }
     }
 }

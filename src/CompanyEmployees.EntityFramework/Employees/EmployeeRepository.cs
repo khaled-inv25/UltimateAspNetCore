@@ -21,6 +21,10 @@ namespace CompanyEmployees.EntityFramework.Employees
             => await FindByCondition(e => e.CompanyId.Equals(companyId) && e.Id.Equals(id), trackChanges)
             .FirstOrDefaultAsync();
 
+        public async Task<Employee?> GetEmployeeByUserNameAsync(Guid companyId, string userName, bool trackChanges)
+            => await FindByCondition(e => e.CompanyId.Equals(companyId) && e.UserName.Equals(userName), trackChanges)
+            .FirstOrDefaultAsync();
+
         public async Task<IEnumerable<Employee>> GetEmployeesAsync(Guid companyId, bool trackChanges, EmployeeParameters param)
             => await FindByCondition(e =>
             e.CompanyId.Equals(companyId), trackChanges)

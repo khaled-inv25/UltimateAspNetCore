@@ -16,5 +16,7 @@
         public const string ObjectIsNull = "Object is null. Controller: {0}, Action: {1}";
 
         public const string NotValidAgeRange = "Max age can't be less than min age.";
+
+        public const string InvalidCredentials = "Access denied invalid credentials.";
     }
 }

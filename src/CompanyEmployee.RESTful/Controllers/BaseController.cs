@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CompanyEmployee.RESTful.Controllers
 {
-    [ServiceFilter(typeof(ValidationFilterAttribute))]
+    //[ServiceFilter(typeof(ValidationFilterAttribute))]
     public class BaseController : ControllerBase
     {
         #region fields

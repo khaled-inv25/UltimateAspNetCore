@@ -93,10 +93,24 @@ namespace CompanyEmployees.WebApi.Migrations
                         .HasMaxLength(60)
                         .HasColumnType("nvarchar(60)");
 
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Position")
                         .IsRequired()
                         .HasMaxLength(60)
                         .HasColumnType("nvarchar(60)");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.HasKey("Id");
 
@@ -111,7 +125,10 @@ namespace CompanyEmployees.WebApi.Migrations
                             Age = 30,
                             CompanyId = new Guid("a627d731-5382-4bf4-87c0-4f256fddd004"),
                             Name = "Khaled Ali",
-                            Position = "Software developer"
+                            Password = "$2a$11$1K4G1I.HyDkBQcP7tZ.7i.Nn882IzqKPUnrOUHfUjMVOL271kR6je",
+                            Position = "Software developer",
+                            Role = "admin",
+                            UserName = "khalid-ali"
                         },
                         new
                         {
@@ -119,7 +136,10 @@ namespace CompanyEmployees.WebApi.Migrations
                             Age = 24,
                             CompanyId = new Guid("a627d731-5382-4bf4-87c0-4f256fddd004"),
                             Name = "Mohammed Al-Batool",
-                            Position = "Mobile developer"
+                            Password = "$2a$11$3m7MnU62UyYW/5btVU61xeM3Gm84I7bdtoubWxYhcU8I2BScyFu4.",
+                            Position = "Mobile developer",
+                            Role = "employee",
+                            UserName = "Mohammed"
                         },
                         new
                         {
@@ -127,7 +147,10 @@ namespace CompanyEmployees.WebApi.Migrations
                             Age = 24,
                             CompanyId = new Guid("a627d731-5382-4bf4-87c0-4f256fddd004"),
                             Name = "Osamah Al-Obary",
-                            Position = "Software developer"
+                            Password = "$2a$11$PWhbSGO4AnAZNHNcCElMZuFsu/jrhdI2/imBXQEYk6ce5jonZ3n3i",
+                            Position = "Software developer",
+                            Role = "employee",
+                            UserName = "Osamah"
                         },
                         new
                         {
@@ -135,7 +158,10 @@ namespace CompanyEmployees.WebApi.Migrations
                             Age = 26,
                             CompanyId = new Guid("a627d731-5382-4bf4-87c0-4f256fddd004"),
                             Name = "Ahmed Al-Hemuary",
-                            Position = "Tester"
+                            Password = "$2a$11$xqwTYTJJ88p9mP5teQs2lei/ZoBYbH/fDOaD/ycD1wCk/OX73UUlu",
+                            Position = "Tester",
+                            Role = "employee",
+                            UserName = "Ahmed"
                         },
                         new
                         {
@@ -143,7 +169,10 @@ namespace CompanyEmployees.WebApi.Migrations
                             Age = 32,
                             CompanyId = new Guid("73625b4e-4149-4912-b6d9-08a595d78124"),
                             Name = "Osamah Salam",
-                            Position = "Customer service"
+                            Password = "$2a$11$/54euhp75LFjMtjE2EUqQOGiFiWjJyMT.PbuO8FEWvSVPZLIdo1sW",
+                            Position = "Customer service",
+                            Role = "employee",
+                            UserName = "Salam"
                         },
                         new
                         {
@@ -151,7 +180,10 @@ namespace CompanyEmployees.WebApi.Migrations
                             Age = 26,
                             CompanyId = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
                             Name = "Sam Raiden",
-                            Position = "Accounting"
+                            Password = "$2a$11$h8cbfBNBSkjf47OTekNfreTvaoqMddLYgFUuOkdzA1lCe91kYWTsi",
+                            Position = "Accounting",
+                            Role = "employee",
+                            UserName = "Sam"
                         },
                         new
                         {
@@ -159,7 +191,10 @@ namespace CompanyEmployees.WebApi.Migrations
                             Age = 30,
                             CompanyId = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
                             Name = "Jana McLeaf",
-                            Position = "Marketing "
+                            Password = "$2a$11$GGbwZquAYZQ9Jnhhct.pD.J/jVTzMRBbMYsgvUdmzRVGGPv6Bzyla",
+                            Position = "Marketing ",
+                            Role = "employee",
+                            UserName = "Jana"
                         },
                         new
                         {
@@ -167,7 +202,10 @@ namespace CompanyEmployees.WebApi.Migrations
                             Age = 35,
                             CompanyId = new Guid("3d490a70-94ce-4d15-9494-5248280c2ce3"),
                             Name = "Kane Miller",
-                            Position = "Adminstrater"
+                            Password = "$2a$11$CWzFaNhz0GIMCiQOaanm3e5rEn6G/zxrvRI29NzqtdS3bHNkuUA6a",
+                            Position = "Adminstrater",
+                            Role = "employee",
+                            UserName = "Kane"
                         });
                 });
 

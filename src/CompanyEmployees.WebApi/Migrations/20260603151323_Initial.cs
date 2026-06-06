@@ -33,8 +33,10 @@ namespace CompanyEmployees.WebApi.Migrations
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(60)", maxLength: 60, nullable: false),
+                    UserName = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Age = table.Column<int>(type: "int", nullable: false),
-                    Position = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
+                    Position = table.Column<string>(type: "nvarchar(60)", maxLength: 60, nullable: false),
                     CompanyId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>

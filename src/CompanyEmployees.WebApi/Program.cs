@@ -19,6 +19,12 @@ builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.ConfigureAutoMapper();
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddScoped<ValidationFilterAttribute>();
+//builder.Services.ConfigureResponseCashing();
+builder.Services.ConfigureOutputCaching();
+builder.Services.ConfigureRateLimitingOptions();
+builder.Services.ConfigureJwt();
+builder.Services.ConfigurePolicy();
+builder.Services.ConfigureHandler();
 
 NewtonsoftJsonPatchInputFormatter GetJsonPatchInputFormatter() =>
     new ServiceCollection()
@@ -34,6 +40,7 @@ builder.Services.AddControllers(config =>
 {
     config.ReturnHttpNotAcceptable = true;
     config.InputFormatters.Insert(0, GetJsonPatchInputFormatter());
+    //config.CacheProfiles.Add(CompanyEmployeesConsts.Cach120SecondsDuration, new CacheProfile() { Duration = 120 });
 })
     .AddApplicationPart(typeof(CompanyEmployee.RESTful.AssemblyReference).Assembly);
 
@@ -50,6 +57,10 @@ app.UseHttpsRedirection();
 
 app.UseCors(CompanyEmployeesConsts.CorsPolicy);
 
+//app.UseResponseCaching();
+app.UseOutputCache();
+
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

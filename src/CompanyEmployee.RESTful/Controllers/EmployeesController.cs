@@ -3,14 +3,17 @@ using CompanyEmployees.Application.Contract;
 using CompanyEmployees.Application.Contract.Employees;
 using CompanyEmployees.Domain.Shared;
 using CompanyEmployees.Domain.Shared.RequestFeatures;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using System.Text.Json;
 
 namespace CompanyEmployee.RESTful.Controllers
 {
     [Route("api/companies/{companyId}/employees")]
     [ApiController]
+    [Authorize]
     public class EmployeesController : BaseController
     {
         #region ctor

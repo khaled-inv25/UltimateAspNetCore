@@ -13,6 +13,17 @@ namespace CompanyEmployees.Domain.Employees
         public string Name { get; set; }
 
         [Required(ErrorMessage = CompanyEmployeesErrorCodes.RequiredField)]
+        [MaxLength(EmployeeConsts.MaxUserNameLength, ErrorMessage = CompanyEmployeesErrorCodes.MaxLengthExceeded)]
+        public string UserName { get; set; }
+
+        [Required(ErrorMessage = CompanyEmployeesErrorCodes.RequiredField)]
+        public string Password { get; set; }
+
+        [Required(ErrorMessage = CompanyEmployeesErrorCodes.RequiredField)]
+        [MaxLength(EmployeeConsts.MaxRoleLength, ErrorMessage = CompanyEmployeesErrorCodes.MaxLengthExceeded)]
+        public string Role { get; set; }
+
+        [Required(ErrorMessage = CompanyEmployeesErrorCodes.RequiredField)]
         public int Age { get; set; }
 
         [Required(ErrorMessage = CompanyEmployeesErrorCodes.RequiredField)]
