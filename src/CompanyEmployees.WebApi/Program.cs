@@ -23,8 +23,8 @@ builder.Services.AddScoped<ValidationFilterAttribute>();
 builder.Services.ConfigureOutputCaching();
 builder.Services.ConfigureRateLimitingOptions();
 builder.Services.ConfigureJwt();
-builder.Services.ConfigurePolicy();
-builder.Services.ConfigureHandler();
+//builder.Services.ConfigurePolicy();
+//builder.Services.ConfigureHandler();
 
 NewtonsoftJsonPatchInputFormatter GetJsonPatchInputFormatter() =>
     new ServiceCollection()

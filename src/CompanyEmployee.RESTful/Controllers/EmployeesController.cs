@@ -13,7 +13,7 @@ namespace CompanyEmployee.RESTful.Controllers
 {
     [Route("api/companies/{companyId}/employees")]
     [ApiController]
-    [Authorize]
+    [Authorize(Roles = "admin")]
     public class EmployeesController : BaseController
     {
         #region ctor

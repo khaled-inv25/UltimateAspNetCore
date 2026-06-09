@@ -63,8 +63,8 @@ namespace CompanyEmployees.Application.Authentication
             return
             [
                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-                new Claim(ClaimTypes.Name, ClaimTypes.Name),
-                new Claim(ClaimTypes.Role, ClaimTypes.Role),
+                new Claim(ClaimTypes.Name, user.Name),
+                new Claim(ClaimTypes.Role, user.Role),
             ];
         }
 

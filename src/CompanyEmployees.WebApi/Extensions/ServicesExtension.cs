@@ -111,7 +111,5 @@ namespace CompanyEmployees.WebApi.Extensions
                 });
             });
         }
-
-
     }
 }
