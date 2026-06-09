@@ -151,7 +151,7 @@ return new SymmetricSecurityKey(
                 throw new UnauthorizedException(CompanyEmployeesErrorCodes.InvalidRefreshRequest);
             }
 
-            if (user.RefreshTokenExpiresAt is not null)
+            if (user.RefreshTokenRevokedAt is not null)
             {
                 throw new UnauthorizedException(CompanyEmployeesErrorCodes.RefreshTokenIsRevoked);
             }

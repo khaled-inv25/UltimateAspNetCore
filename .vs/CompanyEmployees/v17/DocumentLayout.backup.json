@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{EEBB073C-7375-4602-B2E7-AAA65C095DB7}|src\\CompanyEmployees.Application\\CompanyEmployees.Application.csproj|solutionrelative:src\\companyemployees.application\\authentication\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{02566535-C921-4B97-AA06-52384C7BD886}|src\\CompanyEmployee.RESTful\\CompanyEmployee.RESTful.csproj|d:\\developer\\asp.net\\core\\ultimateaspnetcore\\src\\companyemployee.restful\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02566535-C921-4B97-AA06-52384C7BD886}|src\\CompanyEmployee.RESTful\\CompanyEmployee.RESTful.csproj|solutionrelative:src\\companyemployee.restful\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F2DC84F-0C1C-4762-BC66-3D29CF0F8A9A}|src\\CompanyEmployees.Application.Contract\\CompanyEmployees.Application.Contract.csproj|d:\\developer\\asp.net\\core\\ultimateaspnetcore\\src\\companyemployees.application.contract\\authentication\\refreshrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F2DC84F-0C1C-4762-BC66-3D29CF0F8A9A}|src\\CompanyEmployees.Application.Contract\\CompanyEmployees.Application.Contract.csproj|solutionrelative:src\\companyemployees.application.contract\\authentication\\refreshrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0F2DC84F-0C1C-4762-BC66-3D29CF0F8A9A}|src\\CompanyEmployees.Application.Contract\\CompanyEmployees.Application.Contract.csproj|d:\\developer\\asp.net\\core\\ultimateaspnetcore\\src\\companyemployees.application.contract\\authentication\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F2DC84F-0C1C-4762-BC66-3D29CF0F8A9A}|src\\CompanyEmployees.Application.Contract\\CompanyEmployees.Application.Contract.csproj|solutionrelative:src\\companyemployees.application.contract\\authentication\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55505320-EFBB-4DAD-A5F3-B0A50912C0A8}|src\\CompanyEmployees.Domain\\CompanyEmployees.Domain.csproj|d:\\developer\\asp.net\\core\\ultimateaspnetcore\\src\\companyemployees.domain\\employees\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55505320-EFBB-4DAD-A5F3-B0A50912C0A8}|src\\CompanyEmployees.Domain\\CompanyEmployees.Domain.csproj|solutionrelative:src\\companyemployees.domain\\employees\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02566535-C921-4B97-AA06-52384C7BD886}|src\\CompanyEmployee.RESTful\\CompanyEmployee.RESTful.csproj|d:\\developer\\asp.net\\core\\ultimateaspnetcore\\src\\companyemployee.restful\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02566535-C921-4B97-AA06-52384C7BD886}|src\\CompanyEmployee.RESTful\\CompanyEmployee.RESTful.csproj|solutionrelative:src\\companyemployee.restful\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F2DC84F-0C1C-4762-BC66-3D29CF0F8A9A}|src\\CompanyEmployees.Application.Contract\\CompanyEmployees.Application.Contract.csproj|d:\\developer\\asp.net\\core\\ultimateaspnetcore\\src\\companyemployees.application.contract\\authentication\\tokenresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F2DC84F-0C1C-4762-BC66-3D29CF0F8A9A}|src\\CompanyEmployees.Application.Contract\\CompanyEmployees.Application.Contract.csproj|solutionrelative:src\\companyemployees.application.contract\\authentication\\tokenresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0F2DC84F-0C1C-4762-BC66-3D29CF0F8A9A}|src\\CompanyEmployees.Application.Contract\\CompanyEmployees.Application.Contract.csproj|d:\\developer\\asp.net\\core\\ultimateaspnetcore\\src\\companyemployees.application.contract\\authentication\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,28 +62,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "RefreshRequestDto.cs",
+              "DocumentMoniker": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application.Contract\\Authentication\\RefreshRequestDto.cs",
+              "RelativeDocumentMoniker": "src\\CompanyEmployees.Application.Contract\\Authentication\\RefreshRequestDto.cs",
+              "ToolTip": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application.Contract\\Authentication\\RefreshRequestDto.cs",
+              "RelativeToolTip": "src\\CompanyEmployees.Application.Contract\\Authentication\\RefreshRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T10:20:56.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AuthenticationController.cs",
               "DocumentMoniker": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployee.RESTful\\Controllers\\AuthenticationController.cs",
               "RelativeDocumentMoniker": "src\\CompanyEmployee.RESTful\\Controllers\\AuthenticationController.cs",
               "ToolTip": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployee.RESTful\\Controllers\\AuthenticationController.cs",
               "RelativeToolTip": "src\\CompanyEmployee.RESTful\\Controllers\\AuthenticationController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-09T06:55:40.726Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TokenResponseDto.cs",
-              "DocumentMoniker": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application.Contract\\Authentication\\TokenResponseDto.cs",
-              "RelativeDocumentMoniker": "src\\CompanyEmployees.Application.Contract\\Authentication\\TokenResponseDto.cs",
-              "ToolTip": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application.Contract\\Authentication\\TokenResponseDto.cs",
-              "RelativeToolTip": "src\\CompanyEmployees.Application.Contract\\Authentication\\TokenResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-09T06:47:35.951Z",
               "EditorCaption": ""
             },
             {
@@ -92,25 +92,24 @@
               "Title": "AuthenticationService.cs",
               "DocumentMoniker": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application\\Authentication\\AuthenticationService.cs",
               "RelativeDocumentMoniker": "src\\CompanyEmployees.Application\\Authentication\\AuthenticationService.cs",
-              "ToolTip": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application\\Authentication\\AuthenticationService.cs",
-              "RelativeToolTip": "src\\CompanyEmployees.Application\\Authentication\\AuthenticationService.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAIwCQAAAANAAAAAAAAAA==",
+              "ToolTip": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application\\Authentication\\AuthenticationService.cs*",
+              "RelativeToolTip": "src\\CompanyEmployees.Application\\Authentication\\AuthenticationService.cs*",
+              "ViewState": "AgIAAGIAAAAAAAAAAAD4v5MAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-09T06:48:07.333Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "IAuthenticationService.cs",
               "DocumentMoniker": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application.Contract\\Authentication\\IAuthenticationService.cs",
               "RelativeDocumentMoniker": "src\\CompanyEmployees.Application.Contract\\Authentication\\IAuthenticationService.cs",
               "ToolTip": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Application.Contract\\Authentication\\IAuthenticationService.cs",
               "RelativeToolTip": "src\\CompanyEmployees.Application.Contract\\Authentication\\IAuthenticationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-09T06:46:05.086Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-09T06:46:05.086Z"
             },
             {
               "$type": "Document",
@@ -122,12 +121,11 @@
               "RelativeToolTip": "src\\CompanyEmployees.Application.Contract\\Authentication\\LoginDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-09T06:45:58.313Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-09T06:45:58.313Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Employee.cs",
               "DocumentMoniker": "D:\\developer\\ASP.NET\\Core\\UltimateAspNetCore\\src\\CompanyEmployees.Domain\\Employees\\Employee.cs",
               "RelativeDocumentMoniker": "src\\CompanyEmployees.Domain\\Employees\\Employee.cs",
@@ -135,8 +133,7 @@
               "RelativeToolTip": "src\\CompanyEmployees.Domain\\Employees\\Employee.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAQwB4AAAByAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-09T06:59:39.924Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-09T06:59:39.924Z"
             }
           ]
         }

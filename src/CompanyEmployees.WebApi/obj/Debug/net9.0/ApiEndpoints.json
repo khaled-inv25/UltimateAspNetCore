@@ -16,6 +16,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "CompanyEmployee.RESTful.Controllers.AuthenticationController",
+    "Method": "Refresh",
+    "RelativePath": "api/auth/refresh",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "CompanyEmployees.Application.Contract.Authentication.RefreshRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CompanyEmployee.RESTful.Controllers.CompaniesController",
     "Method": "GetAllCompanies",
     "RelativePath": "api/companies",
