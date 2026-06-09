@@ -16,10 +16,13 @@ namespace CompanyEmployee.RESTful.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginDto model)
         {
-            return Ok(new
-            {
-                token = await _serviceManager.AuthService.LoginAsync(model)
-            });
+            return Ok(await _serviceManager.AuthService.LoginAsync(model));
+        }
+        
+        [HttpPost("refresh")]
+        public async Task<IActionResult> Refresh([FromBody] RefreshRequestDto model)
+        {
+            return Ok(await _serviceManager.AuthService.RefreshAsync(model));
         }
     }
 }

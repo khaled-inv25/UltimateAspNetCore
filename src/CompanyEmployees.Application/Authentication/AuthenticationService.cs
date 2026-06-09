@@ -6,6 +6,7 @@ using CompanyEmployees.Domain.Shared;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace CompanyEmployees.Application.Authentication
@@ -19,11 +20,11 @@ namespace CompanyEmployees.Application.Authentication
             _repositoryManager = repositoryManager;
         }
 
-        public async Task<string> LoginAsync(LoginDto input)
+        public async Task<TokenResponseDto> LoginAsync(LoginDto input)
         {
             await CheckCompanyExistence(input.CompanyId, trackChanges: false);
 
-            var user = await _repositoryManager.Employee.GetEmployeeByUserNameAsync(input.CompanyId, input.UserName, trackChanges: false);
+            var user = await _repositoryManager.Employee.GetEmployeeByUserNameAsync(input.CompanyId, input.UserName, trackChanges: true);
 
             if (user is null)
             {
@@ -37,9 +38,47 @@ namespace CompanyEmployees.Application.Authentication
                 throw new UnauthorizedException(CompanyEmployeesErrorCodes.InvalidCredentials);
             }
 
-            return GenerateToken(user);
+            var response = new TokenResponseDto
+            {
+                AccessToken = GenerateToken(user),
+                RefreshToken = GenerateRefreshToken()
+            };
+
+            UpdateUserRefreshToken(response.RefreshToken, user);
+
+            await _repositoryManager.SaveAsync();
+
+            return response;
         }
-       
+
+        public async Task<TokenResponseDto?> RefreshAsync(RefreshRequestDto input)
+        {
+            var user = await _repositoryManager.Employee.GetEmployeeByUserNameAsync(input.CompanyId, input.UserName, trackChanges: true);
+
+            CheckRefreshToken(user, input);
+
+            var response = new TokenResponseDto
+            {
+                AccessToken = GenerateToken(user!),
+                RefreshToken = GenerateRefreshToken()
+            };
+
+            UpdateUserRefreshToken(response.RefreshToken, user!);
+
+            await _repositoryManager.SaveAsync();
+
+            return response;
+        }
+
+        private void UpdateUserRefreshToken(string refreshToken, Employee employee)
+        {
+            var hash = BCrypt.Net.BCrypt.HashPassword(refreshToken);
+
+            employee.RefreshTokenHash = hash;
+            employee.RefreshTokenExpiresAt = DateTime.UtcNow.AddDays(7);
+            employee.RefreshTokenRevokedAt = null;  
+        }
+
         #region Token
         private string GenerateToken(Employee user)
         {
@@ -51,7 +90,7 @@ namespace CompanyEmployees.Application.Authentication
                issuer: "CompanyImployeeApi",
                audience: "CompanyImployeeApiUsers",
                claims: claims,
-               expires: DateTime.Now.AddMinutes(30),
+               expires: DateTime.Now.AddMinutes(15),
                signingCredentials: creds
            );
 
@@ -83,6 +122,16 @@ return new SymmetricSecurityKey(
         {
             return new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
         }
+
+        private string GenerateRefreshToken()
+        {
+            var bytes = new byte[32];
+            using var rng = RandomNumberGenerator.Create();
+            rng.GetBytes(bytes);
+
+            return Convert.ToBase64String(bytes);
+        }
+
         #endregion
 
         #region helpers
@@ -94,6 +143,31 @@ return new SymmetricSecurityKey(
             }
 
         }
+
+        private void CheckRefreshToken(Employee? user, RefreshRequestDto dto)
+        {
+            if (user is null)
+            {
+                throw new UnauthorizedException(CompanyEmployeesErrorCodes.InvalidRefreshRequest);
+            }
+
+            if (user.RefreshTokenExpiresAt is not null)
+            {
+                throw new UnauthorizedException(CompanyEmployeesErrorCodes.RefreshTokenIsRevoked);
+            }
+
+            if (dto.RefreshToken is null || user.RefreshTokenExpiresAt < DateTime.UtcNow)
+            {
+                throw new UnauthorizedException(CompanyEmployeesErrorCodes.RefreshTokenExpired);
+            }
+
+            var refreshValid = BCrypt.Net.BCrypt.Verify(dto.RefreshToken, user.RefreshTokenHash);
+
+            if (!refreshValid)
+            {
+                throw new UnauthorizedException(CompanyEmployeesErrorCodes.InvalidRefreshRequest);
+            }
+        } 
         #endregion
     }
 }

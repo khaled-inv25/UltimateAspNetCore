@@ -2,6 +2,7 @@
 {
     public interface IAuthenticationService
     {
-        Task<string> LoginAsync(LoginDto input);
+        Task<TokenResponseDto> LoginAsync(LoginDto input);
+        Task<TokenResponseDto?> RefreshAsync(RefreshRequestDto input);
     }
 }

@@ -3,6 +3,7 @@ using CompanyEmployees.Domain.Shared;
 using CompanyEmployees.Domain.Shared.Employees;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
 
 namespace CompanyEmployees.Domain.Employees
 {
@@ -29,6 +30,15 @@ namespace CompanyEmployees.Domain.Employees
         [Required(ErrorMessage = CompanyEmployeesErrorCodes.RequiredField)]
         [MaxLength(EmployeeConsts.MaxPositionLength, ErrorMessage = CompanyEmployeesErrorCodes.MaxLengthExceeded)]
         public string? Position { get; set; }
+
+        [AllowNull]
+        public string? RefreshTokenHash { get; set; }
+
+        [AllowNull]
+        public DateTime? RefreshTokenExpiresAt { get; set; }
+
+        [AllowNull]
+        public DateTime? RefreshTokenRevokedAt { get; set; }
 
         [ForeignKey(nameof(Company))]
         public Guid CompanyId { get; set; }
