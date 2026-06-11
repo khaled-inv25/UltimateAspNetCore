@@ -91,7 +91,8 @@ namespace CompanyEmployees.WebApi.Extensions
                         ValidIssuer = "CompanyImployeeApi",
                         ValidAudience = "CompanyImployeeApiUsers",
                         IssuerSigningKey = new SymmetricSecurityKey(
-                             Encoding.UTF8.GetBytes("THIS_IS_A_VERY_SECRET_KEY_123456"))
+                             Encoding.UTF8.GetBytes("THIS_IS_A_VERY_SECRET_KEY_123456")),
+                        ClockSkew = TimeSpan.Zero
                     };
                 });
         }

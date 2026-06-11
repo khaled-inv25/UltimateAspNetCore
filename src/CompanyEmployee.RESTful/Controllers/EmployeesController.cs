@@ -33,7 +33,7 @@ namespace CompanyEmployee.RESTful.Controllers
         }
 
         [HttpGet("paged")]
-        [SkipRequestDtoValidation]
+        //[SkipRequestDtoValidation]
         public async Task<IActionResult> GetPagedListEmplyeesAsync(Guid companyId, [FromQuery] EmployeeParameters param)
         {
             var pagedResult = await _serviceManager.EmployeeService.GetEmployeePagedListAsync(companyId, param);

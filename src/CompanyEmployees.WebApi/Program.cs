@@ -25,6 +25,7 @@ builder.Services.ConfigureRateLimitingOptions();
 builder.Services.ConfigureJwt();
 //builder.Services.ConfigurePolicy();
 //builder.Services.ConfigureHandler();
+builder.Services.AddAuthorization();
 
 NewtonsoftJsonPatchInputFormatter GetJsonPatchInputFormatter() =>
     new ServiceCollection()
