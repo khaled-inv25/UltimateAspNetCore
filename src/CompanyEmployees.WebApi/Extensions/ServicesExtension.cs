@@ -59,17 +59,23 @@ namespace CompanyEmployees.WebApi.Extensions
 
         public static void ConfigureRateLimitingOptions(this IServiceCollection services)
         {
-            services.AddRateLimiter(opt =>
+            services.AddRateLimiter(options =>
             {
-                opt.GlobalLimiter = PartitionedRateLimiter.Create<HttpContext, string>(context =>
-                RateLimitPartition.GetFixedWindowLimiter("GlobalLimiter",
-                partition => new FixedWindowRateLimiterOptions
+                options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
+
+                options.AddPolicy(CompanyEmployeesConsts.AuthLimiter, httpContext =>
                 {
-                    AutoReplenishment = true,
-                    PermitLimit = 5,
-                    QueueLimit = 0,
-                    Window = TimeSpan.FromMinutes(1)
-                }));
+                    var ip = httpContext.Connection.RemoteIpAddress?.ToString() ?? "unknown";
+
+                    return RateLimitPartition.GetFixedWindowLimiter(
+                        partitionKey: ip,
+                        factory: _ => new FixedWindowRateLimiterOptions()
+                        {
+                            PermitLimit = 5,
+                            Window = TimeSpan.FromMinutes(1),
+                            QueueLimit = 0
+                        });
+                });
             });
         }
 
